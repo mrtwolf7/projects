@@ -1,0 +1,23 @@
+import pandas as pd
+
+def get_position_changes(final_position, grid_position):
+    position_change = final_position-grid_position
+    return position_change
+
+def convert_to_timedelta_column(times):
+    leader_time = pd.to_timedelta(times[0])
+    td_times = [leader_time]
+
+    for t in times[1:]:
+        if isinstance(t, str) and t.startswith('+'):
+            offset = float(t[1:])
+            td_times.append(leader_time + pd.Timedelta(seconds=offset))
+        else:
+            td_times.append(pd.NaT)
+
+    return pd.Series(td_times)
+
+
+def get_position_interval(time_series):
+    leader_time = time_series.iloc[0]
+    return (time_series - leader_time).dt.total_seconds()
