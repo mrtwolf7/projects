@@ -28,23 +28,30 @@ def main():
     races = get_season_races(year)
     print(f"Found {len(races)} races in {year}")
 
-    # Grab and display one race result
-    results = get_race_results(year, 1)
-    df = pd.DataFrame([{
-        'position': r['position'],
-        'driver': f"{r['Driver']['givenName']} {r['Driver']['familyName']}",
-        'constructor': r['Constructor']['name'],
-        'grid': r['grid'],
-        'time': r['Time']['time'] if 'Time' in r else None
-    } for r in results]).head()
+    for race in races:
+        race_gaps = []
+        print(race['round'])
+        results = get_race_results(year, race['round'])
+        df = pd.DataFrame([{
+            'position': r['position'],
+            'driver': f"{r['Driver']['givenName']} {r['Driver']['familyName']}",
+            'constructor': r['Constructor']['name'],
+            'grid': r['grid'],
+            'time': r['Time']['time'] if 'Time' in r else None
+        } for r in results]).head()
 
-    df['grid'] = df['grid'].astype(int)
-    df['position'] = df['position'].astype(int)
-    df['time'] = convert_to_timedelta_column(df['time'])
-    df['position_change'] = get_position_changes(df['position'],df['grid'])
-    df['time_interval'] = get_position_interval(df['time'])
+        df['grid'] = df['grid'].astype(int)
+        df['position'] = df['position'].astype(int)
+        df['time'] = convert_to_timedelta_column(df['time'])
+        df['position_change'] = get_position_changes(df['position'],df['grid'])
+        df['time_interval'] = get_position_interval(df['time'])
 
-    print(df)
+        race_gaps.append(df['time_interval'].iloc[1:].mean())
+        print(df)
+    
+    season_average_gaps = sum(race_gaps) / len(race_gaps) if race_gaps else None
+    print(season_average_gaps)
+
 
 if __name__ == "__main__":
     main()
