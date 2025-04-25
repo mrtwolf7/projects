@@ -26,5 +26,4 @@ def convert_to_timedelta_column(times):
 
 
 def get_position_interval(time_series):
-    leader_time = time_series.iloc[0]
-    return (time_series - leader_time).dt.total_seconds()
+    return time_series.diff().dt.total_seconds()
