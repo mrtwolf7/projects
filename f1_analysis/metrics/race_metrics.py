@@ -1,7 +1,7 @@
 import pandas as pd
 
 def get_position_changes(final_position, grid_position):
-    position_change = final_position-grid_position
+    position_change = grid_position-final_position
     return position_change
 
 def convert_to_timedelta_column(times):
