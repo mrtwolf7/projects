@@ -1,13 +1,16 @@
 import dash
 from dash import dcc, html, Input, Output
+import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 
 # Load the data
 df = pd.read_csv("df_races_metrics.csv")
+df_drivers_standings = pd.read_csv("df_drivers_standings.csv")
+df_constructors_standings = pd.read_csv("df_constructors_standings.csv")
 
 # Initialize Dash app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "F1 Race Metrics"
 
 # Get list of available years
@@ -26,25 +29,31 @@ app.layout = html.Div([
         )
     ], style={'display': 'flex', 'justifyContent': 'flex-end', 'padding': '10px 20px'}),
 
-    html.Div([
-        html.Div([dcc.Graph(id='driver-wins')], className='six columns'),
-        html.Div([dcc.Graph(id='constructor-wins')], className='six columns'),
-    ], className='row'),
+    dbc.Row([
+        dbc.Col(dcc.Graph(id='driver-ratio'), width=6),
+        dbc.Col(dcc.Graph(id='constructor-ratio'), width=6),
+    ]),
+    
+    dbc.Row([
+        dbc.Col(dcc.Graph(id='driver-wins'), width=6),
+        dbc.Col(dcc.Graph(id='constructor-wins'), width=6),
+    ]),
 
-    html.Div([
-        html.Div([dcc.Graph(id='avg-gap-timeseries')], className='six columns'),
-        html.Div([dcc.Graph(id='avg-gap-dist')], className='six columns'),
-    ], className='row'),
+    dbc.Row([
+        dbc.Col(dcc.Graph(id='avg-gap-timeseries'), width=6),
+        dbc.Col(dcc.Graph(id='avg-gap-dist'), width=6),
+    ]),
 
-    html.Div([
-        html.Div([dcc.Graph(id='pos-change-timeseries')], className='six columns'),
-        html.Div([dcc.Graph(id='pos-change-dist')], className='six columns'),
-    ], className='row')
-], style={'padding': '10px'})
-
+    dbc.Row([
+        dbc.Col(dcc.Graph(id='pos-change-timeseries'), width=6),
+        dbc.Col(dcc.Graph(id='pos-change-dist'), width=6),
+    ])
+])
 
 # Callbacks
 @app.callback(
+    Output('driver-ratio', 'figure'),
+    Output('constructor-ratio', 'figure'),    
     Output('driver-wins', 'figure'),
     Output('constructor-wins', 'figure'),
     Output('avg-gap-timeseries', 'figure'),
@@ -55,6 +64,17 @@ app.layout = html.Div([
 )
 def update_graphs(selected_year):
     dff = df[df['year'] == selected_year]
+    dff_drivers_standings = df_drivers_standings[df_drivers_standings['year'] == selected_year]
+    dff_constructors_standings = df_constructors_standings[df_constructors_standings['year'] == selected_year]
+
+
+    # Pie chart: driver points ratio
+    fig_driver_ratio = px.pie(dff_drivers_standings, values='points', names='driver_id', title='Drivers points')
+    fig_driver_ratio.update_traces(textposition='outside')
+
+    # Pie chart: constructor points ratio
+    fig_constructor_ratio = px.pie(dff_constructors_standings, values='points', names='constructor_id', title='Constructor points')
+    fig_constructor_ratio.update_traces(textposition='outside')
 
     # Bar chart: driver wins
     driver_counts = dff['winner'].value_counts().reset_index()
@@ -83,6 +103,8 @@ def update_graphs(selected_year):
     fig_pos_change_dist = px.histogram(dff, x='position_change', nbins=10, title='Distribution of Position Change')
 
     return (
+        fig_driver_ratio,
+        fig_constructor_ratio,
         fig_driver_wins,
         fig_constructor_wins,
         fig_avg_gap_ts,
