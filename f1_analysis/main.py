@@ -91,9 +91,10 @@ def main():
         results = get_race_results(year, race['round'])
         df_race = create_race_df(results)
         df_race_metrics = create_race_metrics_df(df_race, year, track_id, track_name)    
-        df_races_metrics = pd.concat([df_races_metrics, df_race_metrics])
+        df_races_metrics = pd.concat([df_races_metrics, df_race_metrics], ignore_index=True)
 
     print(df_races_metrics)
+    df_races_metrics.to_csv('df_races_metrics.csv')
 
     df_season_metrics = create_season_metrics_df(year, df_races_metrics)
     print(df_season_metrics)
