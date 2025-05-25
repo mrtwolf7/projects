@@ -1,0 +1,25 @@
+,year,track_id,track_name,average_gap,position_change,winner,constructor
+0,2024,bahrain,Bahrain International Circuit,11.697,8,Max Verstappen,Red Bull
+1,2024,jeddah,Jeddah Corniche Circuit,8.93975,4,Max Verstappen,Red Bull
+2,2024,albert_park,Albert Park Grand Prix Circuit,14.07725,5,Carlos Sainz,Ferrari
+3,2024,suzuka,Suzuka Circuit,7.425,7,Max Verstappen,Red Bull
+4,2024,shanghai,Shanghai International Circuit,8.49574999975,7,Max Verstappen,Red Bull
+5,2024,miami,Miami International Autodrome,4.10175,8,Lando Norris,McLaren
+6,2024,imola,Autodromo Enzo e Dino Ferrari,5.58125,2,Max Verstappen,Red Bull
+7,2024,monaco,Circuit de Monaco,3.3272500000000003,0,Charles Leclerc,Ferrari
+8,2024,villeneuve,Circuit Gilles Villeneuve,2.54975,8,Max Verstappen,Red Bull
+9,2024,catalunya,Circuit de Barcelona-Catalunya,5.67725,2,Max Verstappen,Red Bull
+10,2024,red_bull_ring,Red Bull Ring,9.31325,13,George Russell,Mercedes
+11,2024,silverstone,Silverstone Circuit,11.8295,6,Lewis Hamilton,Mercedes
+12,2024,hungaroring,Hungaroring,5.33725,8,Oscar Piastri,McLaren
+13,2024,spa,Circuit de Spa-Francorchamps,2.4625,15,Lewis Hamilton,Mercedes
+14,2024,zandvoort,Circuit Park Zandvoort,8.03425,9,Lando Norris,McLaren
+15,2024,monza,Autodromo Nazionale di Monza,5.705,7,Charles Leclerc,Ferrari
+16,2024,baku,Baku City Circuit,19.2745,16,Oscar Piastri,McLaren
+17,2024,marina_bay,Marina Bay Street Circuit,15.6075,6,Lando Norris,McLaren
+18,2024,americas,Circuit of the Americas,5.48025,8,Charles Leclerc,Ferrari
+19,2024,rodriguez,Autódromo Hermanos Rodríguez,12.134,4,Carlos Sainz,Ferrari
+20,2024,interlagos,Autódromo José Carlos Pace,7.54425,31,Max Verstappen,Red Bull
+21,2024,vegas,Las Vegas Strip Street Circuit,4.145499999999999,9,George Russell,Mercedes
+22,2024,losail,Losail International Circuit,4.1955,14,Max Verstappen,Red Bull
+23,2024,yas_marina,Yas Marina Circuit,9.384500000000001,30,Lando Norris,McLaren
