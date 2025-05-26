@@ -36,5 +36,16 @@ def get_constructor_standings(year):
     url = f"{BASE_URL}/{year}/constructorStandings.json"
     response = requests.get(url)
     data = response.json()
+
+    standings_lists = data['MRData']['StandingsTable']['StandingsLists']
+    if not standings_lists:
+        print(f"No constructor standings for year {year}")
+        return []
+
+    return standings_lists[0]['ConstructorStandings']
+
+    url = f"{BASE_URL}/{year}/constructorStandings.json"
+    response = requests.get(url)
+    data = response.json()
     standings = data['MRData']['StandingsTable']['StandingsLists'][0]['ConstructorStandings']
     return standings

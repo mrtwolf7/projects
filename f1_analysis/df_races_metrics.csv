@@ -1,25 +1,1126 @@
 ,year,track_id,track_name,average_gap,position_change,winner,constructor
-0,2024,bahrain,Bahrain International Circuit,11.697,8,Max Verstappen,Red Bull
-1,2024,jeddah,Jeddah Corniche Circuit,8.93975,4,Max Verstappen,Red Bull
-2,2024,albert_park,Albert Park Grand Prix Circuit,14.07725,5,Carlos Sainz,Ferrari
-3,2024,suzuka,Suzuka Circuit,7.425,7,Max Verstappen,Red Bull
-4,2024,shanghai,Shanghai International Circuit,8.49574999975,7,Max Verstappen,Red Bull
-5,2024,miami,Miami International Autodrome,4.10175,8,Lando Norris,McLaren
-6,2024,imola,Autodromo Enzo e Dino Ferrari,5.58125,2,Max Verstappen,Red Bull
-7,2024,monaco,Circuit de Monaco,3.3272500000000003,0,Charles Leclerc,Ferrari
-8,2024,villeneuve,Circuit Gilles Villeneuve,2.54975,8,Max Verstappen,Red Bull
-9,2024,catalunya,Circuit de Barcelona-Catalunya,5.67725,2,Max Verstappen,Red Bull
-10,2024,red_bull_ring,Red Bull Ring,9.31325,13,George Russell,Mercedes
-11,2024,silverstone,Silverstone Circuit,11.8295,6,Lewis Hamilton,Mercedes
-12,2024,hungaroring,Hungaroring,5.33725,8,Oscar Piastri,McLaren
-13,2024,spa,Circuit de Spa-Francorchamps,2.4625,15,Lewis Hamilton,Mercedes
-14,2024,zandvoort,Circuit Park Zandvoort,8.03425,9,Lando Norris,McLaren
-15,2024,monza,Autodromo Nazionale di Monza,5.705,7,Charles Leclerc,Ferrari
-16,2024,baku,Baku City Circuit,19.2745,16,Oscar Piastri,McLaren
-17,2024,marina_bay,Marina Bay Street Circuit,15.6075,6,Lando Norris,McLaren
-18,2024,americas,Circuit of the Americas,5.48025,8,Charles Leclerc,Ferrari
-19,2024,rodriguez,Autódromo Hermanos Rodríguez,12.134,4,Carlos Sainz,Ferrari
-20,2024,interlagos,Autódromo José Carlos Pace,7.54425,31,Max Verstappen,Red Bull
-21,2024,vegas,Las Vegas Strip Street Circuit,4.145499999999999,9,George Russell,Mercedes
-22,2024,losail,Losail International Circuit,4.1955,14,Max Verstappen,Red Bull
-23,2024,yas_marina,Yas Marina Circuit,9.384500000000001,30,Lando Norris,McLaren
+0,1950,silverstone,Silverstone Circuit,,7,Nino Farina,Alfa Romeo
+1,1950,monaco,Circuit de Monaco,,25,Juan Fangio,Alfa Romeo
+2,1950,indianapolis,Indianapolis Motor Speedway,,24,Johnnie Parsons,Kurtis Kraft
+3,1950,bremgarten,Circuit Bremgarten,,20,Nino Farina,Alfa Romeo
+4,1950,spa,Circuit de Spa-Francorchamps,,12,Juan Fangio,Alfa Romeo
+5,1950,reims,Reims-Gueux,,25,Juan Fangio,Alfa Romeo
+6,1950,monza,Autodromo Nazionale di Monza,,21,Nino Farina,Alfa Romeo
+7,1951,bremgarten,Circuit Bremgarten,,5,Juan Fangio,Alfa Romeo
+8,1951,indianapolis,Indianapolis Motor Speedway,,33,Lee Wallard,Kurtis Kraft
+9,1951,spa,Circuit de Spa-Francorchamps,,9,Nino Farina,Alfa Romeo
+10,1951,reims,Reims-Gueux,,21,Luigi Fagioli,Alfa Romeo
+11,1951,silverstone,Silverstone Circuit,,20,José Froilán González,Ferrari
+12,1951,nurburgring,Nürburgring,,4,Alberto Ascari,Ferrari
+13,1951,monza,Autodromo Nazionale di Monza,,13,Alberto Ascari,Ferrari
+14,1951,pedralbes,Circuit de Pedralbes,,9,Juan Fangio,Alfa Romeo
+15,1952,bremgarten,Circuit Bremgarten,,27,Piero Taruffi,Ferrari
+16,1952,indianapolis,Indianapolis Motor Speedway,,33,Troy Ruttman,Kuzma
+17,1952,spa,Circuit de Spa-Francorchamps,,6,Alberto Ascari,Ferrari
+18,1952,essarts,Rouen-Les-Essarts,,2,Alberto Ascari,Ferrari
+19,1952,silverstone,Silverstone Circuit,,14,Alberto Ascari,Ferrari
+20,1952,nurburgring,Nürburgring,,10,Alberto Ascari,Ferrari
+21,1952,zandvoort,Circuit Park Zandvoort,,3,Alberto Ascari,Ferrari
+22,1952,monza,Autodromo Nazionale di Monza,,13,Alberto Ascari,Ferrari
+23,1953,galvez,Autódromo Juan y Oscar Gálvez,,9,Alberto Ascari,Ferrari
+24,1953,indianapolis,Indianapolis Motor Speedway,,24,Bill Vukovich,Kurtis Kraft
+25,1953,zandvoort,Circuit Park Zandvoort,,23,Alberto Ascari,Ferrari
+26,1953,spa,Circuit de Spa-Francorchamps,,25,Alberto Ascari,Ferrari
+27,1953,reims,Reims-Gueux,,14,Mike Hawthorn,Ferrari
+28,1953,silverstone,Silverstone Circuit,,8,Alberto Ascari,Ferrari
+29,1953,nurburgring,Nürburgring,,12,Nino Farina,Ferrari
+30,1953,bremgarten,Circuit Bremgarten,,12,Alberto Ascari,Ferrari
+31,1953,monza,Autodromo Nazionale di Monza,,9,Juan Fangio,Maserati
+32,1954,galvez,Autódromo Juan y Oscar Gálvez,,15,Juan Fangio,Maserati
+33,1954,indianapolis,Indianapolis Motor Speedway,,35,Bill Vukovich,Kurtis Kraft
+34,1954,spa,Circuit de Spa-Francorchamps,,12,Juan Fangio,Maserati
+35,1954,reims,Reims-Gueux,,20,Juan Fangio,Mercedes
+36,1954,silverstone,Silverstone Circuit,,33,José Froilán González,Ferrari
+37,1954,nurburgring,Nürburgring,,29,Juan Fangio,Mercedes
+38,1954,bremgarten,Circuit Bremgarten,,18,Juan Fangio,Mercedes
+39,1954,monza,Autodromo Nazionale di Monza,,29,Juan Fangio,Mercedes
+40,1954,pedralbes,Circuit de Pedralbes,,22,Mike Hawthorn,Ferrari
+41,1955,galvez,Autódromo Juan y Oscar Gálvez,,7,Juan Fangio,Mercedes
+42,1955,monaco,Circuit de Monaco,,24,Maurice Trintignant,Ferrari
+43,1955,indianapolis,Indianapolis Motor Speedway,,49,Bob Sweikert,Kurtis Kraft
+44,1955,spa,Circuit de Spa-Francorchamps,,15,Juan Fangio,Mercedes
+45,1955,zandvoort,Circuit Park Zandvoort,,8,Juan Fangio,Mercedes
+46,1955,aintree,Aintree,,6,Stirling Moss,Mercedes
+47,1955,monza,Autodromo Nazionale di Monza,,21,Juan Fangio,Mercedes
+48,1956,galvez,Autódromo Juan y Oscar Gálvez,,18,Juan Fangio,Ferrari
+49,1956,monaco,Circuit de Monaco,,19,Stirling Moss,Maserati
+50,1956,indianapolis,Indianapolis Motor Speedway,,37,Pat Flaherty,Watson
+51,1956,spa,Circuit de Spa-Francorchamps,,22,Peter Collins,Ferrari
+52,1956,reims,Reims-Gueux,,17,Peter Collins,Ferrari
+53,1956,silverstone,Silverstone Circuit,,48,Juan Fangio,Ferrari
+54,1956,nurburgring,Nürburgring,,28,Juan Fangio,Ferrari
+55,1956,monza,Autodromo Nazionale di Monza,,52,Stirling Moss,Maserati
+56,1957,galvez,Autódromo Juan y Oscar Gálvez,,17,Juan Fangio,Maserati
+57,1957,monaco,Circuit de Monaco,,19,Juan Fangio,Maserati
+58,1957,indianapolis,Indianapolis Motor Speedway,,67,Sam Hanks,Epperly
+59,1957,essarts,Rouen-Les-Essarts,,7,Juan Fangio,Maserati
+60,1957,aintree,Aintree,,19,Stirling Moss,Vanwall
+61,1957,nurburgring,Nürburgring,,7,Juan Fangio,Maserati
+62,1957,pescara,Pescara Circuit,,10,Stirling Moss,Vanwall
+63,1957,monza,Autodromo Nazionale di Monza,,22,Stirling Moss,Vanwall
+64,1958,galvez,Autódromo Juan y Oscar Gálvez,,14,Stirling Moss,Cooper
+65,1958,monaco,Circuit de Monaco,,26,Maurice Trintignant,Cooper
+66,1958,zandvoort,Circuit Park Zandvoort,,13,Stirling Moss,Vanwall
+67,1958,indianapolis,Indianapolis Motor Speedway,,54,Jimmy Bryan,Epperly
+68,1958,spa,Circuit de Spa-Francorchamps,,23,Tony Brooks,Vanwall
+69,1958,reims,Reims-Gueux,,27,Mike Hawthorn,Ferrari
+70,1958,silverstone,Silverstone Circuit,,13,Peter Collins,Ferrari
+71,1958,nurburgring,Nürburgring,,17,Tony Brooks,Vanwall
+72,1958,boavista,Circuito da Boavista,,1,Stirling Moss,Vanwall
+73,1958,monza,Autodromo Nazionale di Monza,,20,Tony Brooks,Vanwall
+74,1958,ain-diab,Ain Diab,,13,Stirling Moss,Vanwall
+75,1959,monaco,Circuit de Monaco,,16,Jack Brabham,Cooper-Climax
+76,1959,indianapolis,Indianapolis Motor Speedway,,30,Rodger Ward,Watson
+77,1959,zandvoort,Circuit Park Zandvoort,,10,Jo Bonnier,BRM
+78,1959,reims,Reims-Gueux,,14,Tony Brooks,Ferrari
+79,1959,aintree,Aintree,,12,Jack Brabham,Cooper-Climax
+80,1959,avus,AVUS,,14,Tony Brooks,Ferrari
+81,1959,monsanto,Monsanto Park Circuit,,8,Stirling Moss,Cooper-Climax
+82,1959,monza,Autodromo Nazionale di Monza,,6,Stirling Moss,Cooper-Climax
+83,1959,sebring,Sebring International Raceway,,19,Bruce McLaren,Cooper-Climax
+84,1960,galvez,Autódromo Juan y Oscar Gálvez,,35,Bruce McLaren,Cooper-Climax
+85,1960,monaco,Circuit de Monaco,,17,Stirling Moss,Team Lotus
+86,1960,indianapolis,Indianapolis Motor Speedway,,41,Jim Rathmann,Watson
+87,1960,zandvoort,Circuit Park Zandvoort,,17,Jack Brabham,Cooper-Climax
+88,1960,spa,Circuit de Spa-Francorchamps,,19,Jack Brabham,Cooper-Climax
+89,1960,reims,Reims-Gueux,,24,Jack Brabham,Cooper-Climax
+90,1960,silverstone,Silverstone Circuit,,16,Jack Brabham,Cooper-Climax
+91,1960,boavista,Circuito da Boavista,,23,Jack Brabham,Cooper-Climax
+92,1960,monza,Autodromo Nazionale di Monza,,1,Phil Hill,Ferrari
+93,1960,riverside,Riverside International Raceway,,15,Stirling Moss,Team Lotus
+94,1961,monaco,Circuit de Monaco,,10,Stirling Moss,Lotus-Climax
+95,1961,zandvoort,Circuit Park Zandvoort,,12,Wolfgang von Trips,Ferrari
+96,1961,spa,Circuit de Spa-Francorchamps,,4,Phil Hill,Ferrari
+97,1961,reims,Reims-Gueux,,29,Giancarlo Baghetti,Ferrari
+98,1961,aintree,Aintree,,12,Wolfgang von Trips,Ferrari
+99,1961,nurburgring,Nürburgring,,16,Stirling Moss,Lotus-Climax
+100,1961,monza,Autodromo Nazionale di Monza,,44,Phil Hill,Ferrari
+101,1961,watkins_glen,Watkins Glen,,17,Innes Ireland,Lotus-Climax
+102,1962,zandvoort,Circuit Park Zandvoort,,33,Graham Hill,BRM
+103,1962,monaco,Circuit de Monaco,,36,Bruce McLaren,Cooper-Climax
+104,1962,spa,Circuit de Spa-Francorchamps,,23,Jim Clark,Lotus-Climax
+105,1962,essarts,Rouen-Les-Essarts,,22,Dan Gurney,Porsche
+106,1962,aintree,Aintree,,6,Jim Clark,Lotus-Climax
+107,1962,nurburgring,Nürburgring,,6,Graham Hill,BRM
+108,1962,monza,Autodromo Nazionale di Monza,,22,Graham Hill,BRM
+109,1962,watkins_glen,Watkins Glen,,6,Jim Clark,Lotus-Climax
+110,1962,george,Prince George Circuit,,12,Graham Hill,BRM
+111,1963,monaco,Circuit de Monaco,,14,Graham Hill,BRM
+112,1963,spa,Circuit de Spa-Francorchamps,,24,Jim Clark,Lotus-Climax
+113,1963,zandvoort,Circuit Park Zandvoort,,18,Jim Clark,Lotus-Climax
+114,1963,reims,Reims-Gueux,,10,Jim Clark,Lotus-Climax
+115,1963,silverstone,Silverstone Circuit,,11,Jim Clark,Lotus-Climax
+116,1963,nurburgring,Nürburgring,,27,John Surtees,Ferrari
+117,1963,monza,Autodromo Nazionale di Monza,,17,Jim Clark,Lotus-Climax
+118,1963,watkins_glen,Watkins Glen,,8,Graham Hill,BRM
+119,1963,rodriguez,Autódromo Hermanos Rodríguez,,14,Jim Clark,Lotus-Climax
+120,1963,george,Prince George Circuit,,9,Jim Clark,Lotus-Climax
+121,1964,monaco,Circuit de Monaco,,20,Graham Hill,BRM
+122,1964,zandvoort,Circuit Park Zandvoort,,15,Jim Clark,Lotus-Climax
+123,1964,spa,Circuit de Spa-Francorchamps,,17,Jim Clark,Lotus-Climax
+124,1964,essarts,Rouen-Les-Essarts,,11,Dan Gurney,Brabham-Climax
+125,1964,brands_hatch,Brands Hatch,,5,Jim Clark,Lotus-Climax
+126,1964,nurburgring,Nürburgring,,19,John Surtees,Ferrari
+127,1964,zeltweg,Zeltweg,,41,Lorenzo Bandini,Ferrari
+128,1964,monza,Autodromo Nazionale di Monza,,20,John Surtees,Ferrari
+129,1964,watkins_glen,Watkins Glen,,33,Graham Hill,BRM
+130,1964,rodriguez,Autódromo Hermanos Rodríguez,,8,Dan Gurney,Brabham-Climax
+131,1965,george,Prince George Circuit,,5,Jim Clark,Lotus-Climax
+132,1965,monaco,Circuit de Monaco,,5,Graham Hill,BRM
+133,1965,spa,Circuit de Spa-Francorchamps,,18,Jim Clark,Lotus-Climax
+134,1965,charade,Charade Circuit,,11,Jim Clark,Lotus-Climax
+135,1965,silverstone,Silverstone Circuit,,5,Jim Clark,Lotus-Climax
+136,1965,zandvoort,Circuit Park Zandvoort,,12,Jim Clark,Lotus-Climax
+137,1965,nurburgring,Nürburgring,,16,Jim Clark,Lotus-Climax
+138,1965,monza,Autodromo Nazionale di Monza,,17,Jackie Stewart,BRM
+139,1965,watkins_glen,Watkins Glen,,21,Graham Hill,BRM
+140,1965,rodriguez,Autódromo Hermanos Rodríguez,,17,Richie Ginther,Honda
+141,1966,monaco,Circuit de Monaco,,22,Jackie Stewart,BRM
+142,1966,spa,Circuit de Spa-Francorchamps,,5,John Surtees,Ferrari
+143,1966,reims,Reims-Gueux,,20,Jack Brabham,Brabham-Repco
+144,1966,brands_hatch,Brands Hatch,,4,Jack Brabham,Brabham-Repco
+145,1966,zandvoort,Circuit Park Zandvoort,,16,Jack Brabham,Brabham-Repco
+146,1966,nurburgring,Nürburgring,,18,Jack Brabham,Brabham-Repco
+147,1966,monza,Autodromo Nazionale di Monza,,22,Ludovico Scarfiotti,Ferrari
+148,1966,watkins_glen,Watkins Glen,,24,Jim Clark,Lotus-BRM
+149,1966,rodriguez,Autódromo Hermanos Rodríguez,,10,John Surtees,Cooper-Maserati
+150,1967,kyalami,Kyalami,,16,Pedro Rodríguez,Cooper-Maserati
+151,1967,monaco,Circuit de Monaco,,37,Denny Hulme,Brabham-Repco
+152,1967,zandvoort,Circuit Park Zandvoort,,22,Jim Clark,Lotus-Ford
+153,1967,spa,Circuit de Spa-Francorchamps,,13,Dan Gurney,Eagle-Weslake
+154,1967,lemans,Le Mans,,23,Jack Brabham,Brabham-Repco
+155,1967,silverstone,Silverstone Circuit,,10,Jim Clark,Lotus-Ford
+156,1967,nurburgring,Nürburgring,,27,Denny Hulme,Brabham-Repco
+157,1967,mosport,Mosport International Raceway,,16,Jack Brabham,Brabham-Repco
+158,1967,monza,Autodromo Nazionale di Monza,,24,John Surtees,Honda
+159,1967,watkins_glen,Watkins Glen,,13,Jim Clark,Lotus-Ford
+160,1967,rodriguez,Autódromo Hermanos Rodríguez,,15,Jim Clark,Lotus-Ford
+161,1968,kyalami,Kyalami,,9,Jim Clark,Lotus-Ford
+162,1968,jarama,Jarama,,24,Graham Hill,Lotus-Ford
+163,1968,monaco,Circuit de Monaco,,31,Graham Hill,Lotus-Ford
+164,1968,spa,Circuit de Spa-Francorchamps,,23,Bruce McLaren,McLaren-Ford
+165,1968,zandvoort,Circuit Park Zandvoort,,30,Jackie Stewart,Matra-Ford
+166,1968,essarts,Rouen-Les-Essarts,,22,Jacky Ickx,Ferrari
+167,1968,brands_hatch,Brands Hatch,,24,Jo Siffert,Lotus-Ford
+168,1968,nurburgring,Nürburgring,,20,Jackie Stewart,Matra-Ford
+169,1968,monza,Autodromo Nazionale di Monza,,44,Denny Hulme,McLaren-Ford
+170,1968,tremblant,Circuit Mont-Tremblant,,32,Denny Hulme,McLaren-Ford
+171,1968,watkins_glen,Watkins Glen,,18,Jackie Stewart,Matra-Ford
+172,1968,rodriguez,Autódromo Hermanos Rodríguez,,41,Graham Hill,Lotus-Ford
+173,1969,kyalami,Kyalami,,19,Jackie Stewart,Matra-Ford
+174,1969,montjuic,Montjuïc,,31,Jackie Stewart,Matra-Ford
+175,1969,monaco,Circuit de Monaco,,24,Graham Hill,Lotus-Ford
+176,1969,zandvoort,Circuit Park Zandvoort,,13,Jackie Stewart,Matra-Ford
+177,1969,charade,Charade Circuit,,12,Jackie Stewart,Matra-Ford
+178,1969,silverstone,Silverstone Circuit,,15,Jackie Stewart,Matra-Ford
+179,1969,nurburgring,Nürburgring,,11,Jacky Ickx,Brabham-Ford
+180,1969,monza,Autodromo Nazionale di Monza,,8,Jackie Stewart,Matra-Ford
+181,1969,mosport,Mosport International Raceway,,10,Jacky Ickx,Brabham-Ford
+182,1969,watkins_glen,Watkins Glen,,36,Jochen Rindt,Lotus-Ford
+183,1969,rodriguez,Autódromo Hermanos Rodríguez,,9,Denny Hulme,McLaren-Ford
+184,1970,kyalami,Kyalami,,21,Jack Brabham,Brabham
+185,1970,jarama,Jarama,,44,Jackie Stewart,March
+186,1970,monaco,Circuit de Monaco,,25,Jochen Rindt,Team Lotus
+187,1970,spa,Circuit de Spa-Francorchamps,,20,Pedro Rodríguez,BRM
+188,1970,zandvoort,Circuit Park Zandvoort,,7,Jochen Rindt,Team Lotus
+189,1970,charade,Charade Circuit,,14,Jochen Rindt,Team Lotus
+190,1970,brands_hatch,Brands Hatch,,16,Jochen Rindt,Team Lotus
+191,1970,hockenheimring,Hockenheimring,,30,Jochen Rindt,Team Lotus
+192,1970,red_bull_ring,Red Bull Ring,,43,Jacky Ickx,Ferrari
+193,1970,monza,Autodromo Nazionale di Monza,,32,Clay Regazzoni,Ferrari
+194,1970,tremblant,Circuit Mont-Tremblant,,8,Jacky Ickx,Ferrari
+195,1970,watkins_glen,Watkins Glen,,13,Emerson Fittipaldi,Team Lotus
+196,1970,rodriguez,Autódromo Hermanos Rodríguez,,16,Jacky Ickx,Ferrari
+197,1971,kyalami,Kyalami,,17,Mario Andretti,Ferrari
+198,1971,montjuic,Montjuïc,,9,Jackie Stewart,Tyrrell
+199,1971,monaco,Circuit de Monaco,,19,Jackie Stewart,Tyrrell
+200,1971,zandvoort,Circuit Park Zandvoort,,12,Jacky Ickx,Ferrari
+201,1971,ricard,Circuit Paul Ricard,,25,Jackie Stewart,Tyrrell
+202,1971,silverstone,Silverstone Circuit,,25,Jackie Stewart,Tyrrell
+203,1971,nurburgring,Nürburgring,,13,Jackie Stewart,Tyrrell
+204,1971,red_bull_ring,Red Bull Ring,,16,Jo Siffert,BRM
+205,1971,monza,Autodromo Nazionale di Monza,,30,Peter Gethin,BRM
+206,1971,mosport,Mosport International Raceway,,17,Jackie Stewart,Tyrrell
+207,1971,watkins_glen,Watkins Glen,,28,François Cevert,Tyrrell
+208,1972,galvez,Autódromo Juan y Oscar Gálvez,,16,Jackie Stewart,Tyrrell
+209,1972,kyalami,Kyalami,,20,Denny Hulme,McLaren
+210,1972,jarama,Jarama,,23,Emerson Fittipaldi,Team Lotus
+211,1972,monaco,Circuit de Monaco,,14,Jean-Pierre Beltoise,BRM
+212,1972,nivelles,Nivelles-Baulers,,13,Emerson Fittipaldi,Team Lotus
+213,1972,charade,Charade Circuit,,17,Jackie Stewart,Tyrrell
+214,1972,brands_hatch,Brands Hatch,,22,Emerson Fittipaldi,Team Lotus
+215,1972,nurburgring,Nürburgring,,34,Jacky Ickx,Ferrari
+216,1972,red_bull_ring,Red Bull Ring,,15,Emerson Fittipaldi,Team Lotus
+217,1972,monza,Autodromo Nazionale di Monza,,24,Emerson Fittipaldi,Team Lotus
+218,1972,mosport,Mosport International Raceway,,13,Jackie Stewart,Tyrrell
+219,1972,watkins_glen,Watkins Glen,,31,Jackie Stewart,Tyrrell
+220,1973,galvez,Autódromo Juan y Oscar Gálvez,,10,Emerson Fittipaldi,Team Lotus
+221,1973,interlagos,Autódromo José Carlos Pace,,24,Emerson Fittipaldi,Team Lotus
+222,1973,kyalami,Kyalami,,35,Jackie Stewart,Tyrrell
+223,1973,montjuic,Montjuïc,,24,Emerson Fittipaldi,Team Lotus
+224,1973,zolder,Zolder,,36,Jackie Stewart,Tyrrell
+225,1973,monaco,Circuit de Monaco,,14,Jackie Stewart,Tyrrell
+226,1973,anderstorp,Scandinavian Raceway,,10,Denny Hulme,McLaren
+227,1973,ricard,Circuit Paul Ricard,,21,Ronnie Peterson,Team Lotus
+228,1973,silverstone,Silverstone Circuit,,13,Peter Revson,McLaren
+229,1973,zandvoort,Circuit Park Zandvoort,,12,Jackie Stewart,Tyrrell
+230,1973,nurburgring,Nürburgring,,17,Jackie Stewart,Tyrrell
+231,1973,red_bull_ring,Red Bull Ring,,20,Ronnie Peterson,Team Lotus
+232,1973,monza,Autodromo Nazionale di Monza,,11,Ronnie Peterson,Team Lotus
+233,1973,mosport,Mosport International Raceway,,31,Peter Revson,McLaren
+234,1973,watkins_glen,Watkins Glen,,9,Ronnie Peterson,Team Lotus
+235,1974,galvez,Autódromo Juan y Oscar Gálvez,,30,Denny Hulme,McLaren
+236,1974,interlagos,Autódromo José Carlos Pace,,18,Emerson Fittipaldi,McLaren
+237,1974,kyalami,Kyalami,,34,Carlos Reutemann,Brabham
+238,1974,jarama,Jarama,,15,Niki Lauda,Ferrari
+239,1974,nivelles,Nivelles-Baulers,,10,Emerson Fittipaldi,McLaren
+240,1974,monaco,Circuit de Monaco,,18,Ronnie Peterson,Team Lotus
+241,1974,anderstorp,Scandinavian Raceway,,13,Jody Scheckter,Tyrrell
+242,1974,zandvoort,Circuit Park Zandvoort,,0,Niki Lauda,Ferrari
+243,1974,dijon,Dijon-Prenois,,14,Ronnie Peterson,Team Lotus
+244,1974,brands_hatch,Brands Hatch,,24,Jody Scheckter,Tyrrell
+245,1974,nurburgring,Nürburgring,,14,Clay Regazzoni,Ferrari
+246,1974,red_bull_ring,Red Bull Ring,,23,Carlos Reutemann,Brabham
+247,1974,monza,Autodromo Nazionale di Monza,,32,Ronnie Peterson,Team Lotus
+248,1974,mosport,Mosport International Raceway,,17,Emerson Fittipaldi,McLaren
+249,1974,watkins_glen,Watkins Glen,,9,Carlos Reutemann,Brabham
+250,1975,galvez,Autódromo Juan y Oscar Gálvez,,14,Emerson Fittipaldi,McLaren
+251,1975,interlagos,Autódromo José Carlos Pace,,14,Carlos Pace,Brabham
+252,1975,kyalami,Kyalami,,8,Jody Scheckter,Tyrrell
+253,1975,montjuic,Montjuïc,1.1,42,Jochen Mass,McLaren
+254,1975,monaco,Circuit de Monaco,,19,Niki Lauda,Ferrari
+255,1975,zolder,Zolder,,19,Niki Lauda,Ferrari
+256,1975,anderstorp,Scandinavian Raceway,,37,Niki Lauda,Ferrari
+257,1975,zandvoort,Circuit Park Zandvoort,,9,James Hunt,Hesketh
+258,1975,ricard,Circuit Paul Ricard,,21,Niki Lauda,Ferrari
+259,1975,silverstone,Silverstone Circuit,,24,Emerson Fittipaldi,McLaren
+260,1975,nurburgring,Nürburgring,,52,Carlos Reutemann,Brabham
+261,1975,red_bull_ring,Red Bull Ring,,32,Vittorio Brambilla,March
+262,1975,monza,Autodromo Nazionale di Monza,,10,Clay Regazzoni,Ferrari
+263,1975,watkins_glen,Watkins Glen,,26,Niki Lauda,Ferrari
+264,1976,interlagos,Autódromo José Carlos Pace,,35,Niki Lauda,Ferrari
+265,1976,kyalami,Kyalami,,13,Niki Lauda,Ferrari
+266,1976,long_beach,Long Beach,,20,Clay Regazzoni,Ferrari
+267,1976,jarama,Jarama,,17,James Hunt,McLaren
+268,1976,zolder,Zolder,,15,Niki Lauda,Ferrari
+269,1976,monaco,Circuit de Monaco,,12,Niki Lauda,Ferrari
+270,1976,anderstorp,Scandinavian Raceway,,10,Jody Scheckter,Tyrrell
+271,1976,ricard,Circuit Paul Ricard,,9,James Hunt,McLaren
+272,1976,brands_hatch,Brands Hatch,,44,Niki Lauda,Ferrari
+273,1976,nurburgring,Nürburgring,,26,James Hunt,McLaren
+274,1976,red_bull_ring,Red Bull Ring,,12,John Watson,Penske
+275,1976,zandvoort,Circuit Park Zandvoort,,11,James Hunt,McLaren
+276,1976,monza,Autodromo Nazionale di Monza,,20,Ronnie Peterson,March
+277,1976,mosport,Mosport International Raceway,,13,James Hunt,McLaren
+278,1976,watkins_glen,Watkins Glen,,16,James Hunt,McLaren
+279,1976,fuji,Fuji Speedway,,30,Mario Andretti,Team Lotus
+280,1977,galvez,Autódromo Juan y Oscar Gálvez,,33,Jody Scheckter,Wolf
+281,1977,interlagos,Autódromo José Carlos Pace,,29,Carlos Reutemann,Ferrari
+282,1977,kyalami,Kyalami,,16,Niki Lauda,Ferrari
+283,1977,long_beach,Long Beach,,12,Mario Andretti,Team Lotus
+284,1977,jarama,Jarama,,16,Mario Andretti,Team Lotus
+285,1977,monaco,Circuit de Monaco,,15,Jody Scheckter,Wolf
+286,1977,zolder,Zolder,,36,Gunnar Nilsson,Team Lotus
+287,1977,anderstorp,Scandinavian Raceway,,28,Jacques Laffite,Ligier
+288,1977,dijon,Dijon-Prenois,,8,Mario Andretti,Team Lotus
+289,1977,silverstone,Silverstone Circuit,,12,James Hunt,McLaren
+290,1977,hockenheimring,Hockenheimring,,14,Niki Lauda,Ferrari
+291,1977,red_bull_ring,Red Bull Ring,,26,Alan Jones,Shadow
+292,1977,zandvoort,Circuit Park Zandvoort,,35,Niki Lauda,Ferrari
+293,1977,monza,Autodromo Nazionale di Monza,,26,Mario Andretti,Team Lotus
+294,1977,watkins_glen,Watkins Glen,,25,James Hunt,McLaren
+295,1977,mosport,Mosport International Raceway,,28,Jody Scheckter,Wolf
+296,1977,fuji,Fuji Speedway,,26,James Hunt,McLaren
+297,1978,galvez,Autódromo Juan y Oscar Gálvez,,14,Mario Andretti,Team Lotus
+298,1978,jacarepagua,Autódromo Internacional Nelson Piquet,,26,Carlos Reutemann,Ferrari
+299,1978,kyalami,Kyalami,,49,Ronnie Peterson,Team Lotus
+300,1978,long_beach,Long Beach,,22,Carlos Reutemann,Ferrari
+301,1978,monaco,Circuit de Monaco,,21,Patrick Depailler,Tyrrell
+302,1978,zolder,Zolder,,15,Mario Andretti,Team Lotus
+303,1978,jarama,Jarama,,14,Mario Andretti,Team Lotus
+304,1978,anderstorp,Scandinavian Raceway,,28,Niki Lauda,Brabham
+305,1978,ricard,Circuit Paul Ricard,,17,Mario Andretti,Team Lotus
+306,1978,brands_hatch,Brands Hatch,,34,Carlos Reutemann,Ferrari
+307,1978,hockenheimring,Hockenheimring,,23,Mario Andretti,Team Lotus
+308,1978,red_bull_ring,Red Bull Ring,,22,Ronnie Peterson,Team Lotus
+309,1978,zandvoort,Circuit Park Zandvoort,,9,Mario Andretti,Team Lotus
+310,1978,monza,Autodromo Nazionale di Monza,,34,Niki Lauda,Brabham
+311,1978,watkins_glen,Watkins Glen,,23,Carlos Reutemann,Ferrari
+312,1978,villeneuve,Circuit Gilles Villeneuve,,26,Gilles Villeneuve,Ferrari
+313,1979,galvez,Autódromo Juan y Oscar Gálvez,,8,Jacques Laffite,Ligier
+314,1979,interlagos,Autódromo José Carlos Pace,,4,Jacques Laffite,Ligier
+315,1979,kyalami,Kyalami,,18,Gilles Villeneuve,Ferrari
+316,1979,long_beach,Long Beach,,11,Gilles Villeneuve,Ferrari
+317,1979,jarama,Jarama,,16,Patrick Depailler,Ligier
+318,1979,zolder,Zolder,,33,Jody Scheckter,Ferrari
+319,1979,monaco,Circuit de Monaco,,34,Jody Scheckter,Ferrari
+320,1979,dijon,Dijon-Prenois,,10,Jean-Pierre Jabouille,Renault
+321,1979,silverstone,Silverstone Circuit,,28,Clay Regazzoni,Williams
+322,1979,hockenheimring,Hockenheimring,,13,Alan Jones,Williams
+323,1979,red_bull_ring,Red Bull Ring,,15,Alan Jones,Williams
+324,1979,zandvoort,Circuit Park Zandvoort,,30,Alan Jones,Williams
+325,1979,monza,Autodromo Nazionale di Monza,,18,Jody Scheckter,Ferrari
+326,1979,villeneuve,Circuit Gilles Villeneuve,,6,Alan Jones,Williams
+327,1979,watkins_glen,Watkins Glen,,39,Gilles Villeneuve,Ferrari
+328,1980,galvez,Autódromo Juan y Oscar Gálvez,,45,Alan Jones,Williams
+329,1980,interlagos,Autódromo José Carlos Pace,,27,René Arnoux,Renault
+330,1980,kyalami,Kyalami,,7,René Arnoux,Renault
+331,1980,long_beach,Long Beach,,55,Nelson Piquet,Brabham
+332,1980,zolder,Zolder,,9,Didier Pironi,Ligier
+333,1980,monaco,Circuit de Monaco,,17,Carlos Reutemann,Williams
+334,1980,ricard,Circuit Paul Ricard,,13,Alan Jones,Williams
+335,1980,brands_hatch,Brands Hatch,,18,Alan Jones,Williams
+336,1980,hockenheimring,Hockenheimring,,24,Jacques Laffite,Ligier
+337,1980,red_bull_ring,Red Bull Ring,,6,Jean-Pierre Jabouille,Renault
+338,1980,zandvoort,Circuit Park Zandvoort,,21,Nelson Piquet,Brabham
+339,1980,imola,Autodromo Enzo e Dino Ferrari,,28,Nelson Piquet,Brabham
+340,1980,villeneuve,Circuit Gilles Villeneuve,,24,Alan Jones,Williams
+341,1980,watkins_glen,Watkins Glen,,16,Alan Jones,Williams
+342,1981,long_beach,Long Beach,,8,Alan Jones,Williams
+343,1981,jacarepagua,Autódromo Internacional Nelson Piquet,,22,Carlos Reutemann,Williams
+344,1981,galvez,Autódromo Juan y Oscar Gálvez,,4,Nelson Piquet,Brabham
+345,1981,imola,Autodromo Enzo e Dino Ferrari,,22,Nelson Piquet,Brabham
+346,1981,zolder,Zolder,,26,Carlos Reutemann,Williams
+347,1981,monaco,Circuit de Monaco,,34,Gilles Villeneuve,Ferrari
+348,1981,jarama,Jarama,,14,Gilles Villeneuve,Ferrari
+349,1981,dijon,Dijon-Prenois,,15,Alain Prost,Renault
+350,1981,silverstone,Silverstone Circuit,,49,John Watson,McLaren
+351,1981,hockenheimring,Hockenheimring,,35,Nelson Piquet,Brabham
+352,1981,red_bull_ring,Red Bull Ring,,10,Jacques Laffite,Ligier
+353,1981,zandvoort,Circuit Park Zandvoort,,17,Alain Prost,Renault
+354,1981,monza,Autodromo Nazionale di Monza,,16,Alain Prost,Renault
+355,1981,villeneuve,Circuit Gilles Villeneuve,,39,Jacques Laffite,Ligier
+356,1981,las_vegas,Las Vegas Street Circuit,,15,Alan Jones,Williams
+357,1982,kyalami,Kyalami,,23,Alain Prost,Renault
+358,1982,jacarepagua,Autódromo Internacional Nelson Piquet,,40,Alain Prost,Renault
+359,1982,long_beach,Long Beach,,41,Niki Lauda,McLaren
+360,1982,imola,Autodromo Enzo e Dino Ferrari,,20,Didier Pironi,Ferrari
+361,1982,zolder,Zolder,,31,John Watson,McLaren
+362,1982,monaco,Circuit de Monaco,,25,Riccardo Patrese,Brabham
+363,1982,detroit,Detroit Street Circuit,,32,John Watson,McLaren
+364,1982,villeneuve,Circuit Gilles Villeneuve,,29,Nelson Piquet,Brabham
+365,1982,zandvoort,Circuit Park Zandvoort,,16,Didier Pironi,Ferrari
+366,1982,brands_hatch,Brands Hatch,,24,Niki Lauda,McLaren
+367,1982,ricard,Circuit Paul Ricard,,6,René Arnoux,Renault
+368,1982,hockenheimring,Hockenheimring,,20,Patrick Tambay,Ferrari
+369,1982,red_bull_ring,Red Bull Ring,,26,Elio de Angelis,Team Lotus
+370,1982,dijon,Dijon-Prenois,,13,Keke Rosberg,Williams
+371,1982,monza,Autodromo Nazionale di Monza,,22,René Arnoux,Renault
+372,1982,las_vegas,Las Vegas Street Circuit,,14,Michele Alboreto,Tyrrell
+373,1983,jacarepagua,Autódromo Internacional Nelson Piquet,,41,Nelson Piquet,Brabham
+374,1983,long_beach,Long Beach,,54,John Watson,McLaren
+375,1983,ricard,Circuit Paul Ricard,,23,Alain Prost,Renault
+376,1983,imola,Autodromo Enzo e Dino Ferrari,,32,Patrick Tambay,Ferrari
+377,1983,monaco,Circuit de Monaco,,25,Keke Rosberg,Williams
+378,1983,spa,Circuit de Spa-Francorchamps,,9,Alain Prost,Renault
+379,1983,detroit,Detroit Street Circuit,,50,Michele Alboreto,Tyrrell
+380,1983,villeneuve,Circuit Gilles Villeneuve,,13,René Arnoux,Ferrari
+381,1983,silverstone,Silverstone Circuit,,25,Alain Prost,Renault
+382,1983,hockenheimring,Hockenheimring,,26,René Arnoux,Ferrari
+383,1983,red_bull_ring,Red Bull Ring,,11,Alain Prost,Renault
+384,1983,zandvoort,Circuit Park Zandvoort,,31,René Arnoux,Ferrari
+385,1983,monza,Autodromo Nazionale di Monza,,13,Nelson Piquet,Brabham
+386,1983,brands_hatch,Brands Hatch,,25,Nelson Piquet,Brabham
+387,1983,kyalami,Kyalami,,20,Riccardo Patrese,Brabham
+388,1984,jacarepagua,Autódromo Internacional Nelson Piquet,,23,Alain Prost,McLaren
+389,1984,kyalami,Kyalami,,39,Niki Lauda,McLaren
+390,1984,zolder,Zolder,,4,Michele Alboreto,Ferrari
+391,1984,imola,Autodromo Enzo e Dino Ferrari,,28,Alain Prost,McLaren
+392,1984,dijon,Dijon-Prenois,,22,Niki Lauda,McLaren
+393,1984,monaco,Circuit de Monaco,,23,Alain Prost,McLaren
+394,1984,villeneuve,Circuit Gilles Villeneuve,,8,Nelson Piquet,Brabham
+395,1984,detroit,Detroit Street Circuit,,39,Nelson Piquet,Brabham
+396,1984,dallas,Fair Park,,43,Keke Rosberg,Williams
+397,1984,brands_hatch,Brands Hatch,,14,Niki Lauda,McLaren
+398,1984,hockenheimring,Hockenheimring,,18,Alain Prost,McLaren
+399,1984,red_bull_ring,Red Bull Ring,,28,Niki Lauda,McLaren
+400,1984,zandvoort,Circuit Park Zandvoort,,19,Alain Prost,McLaren
+401,1984,monza,Autodromo Nazionale di Monza,,50,Niki Lauda,McLaren
+402,1984,nurburgring,Nürburgring,,18,Alain Prost,McLaren
+403,1984,estoril,Autódromo do Estoril,,14,Alain Prost,McLaren
+404,1985,jacarepagua,Autódromo Internacional Nelson Piquet,,15,Alain Prost,McLaren
+405,1985,estoril,Autódromo do Estoril,,16,Ayrton Senna,Team Lotus
+406,1985,imola,Autodromo Enzo e Dino Ferrari,,19,Elio de Angelis,Team Lotus
+407,1985,monaco,Circuit de Monaco,,20,Alain Prost,McLaren
+408,1985,villeneuve,Circuit Gilles Villeneuve,,14,Michele Alboreto,Ferrari
+409,1985,detroit,Detroit Street Circuit,,29,Keke Rosberg,Williams
+410,1985,ricard,Circuit Paul Ricard,,20,Nelson Piquet,Brabham
+411,1985,silverstone,Silverstone Circuit,,28,Alain Prost,McLaren
+412,1985,nurburgring,Nürburgring,,36,Michele Alboreto,Ferrari
+413,1985,red_bull_ring,Red Bull Ring,,28,Alain Prost,McLaren
+414,1985,zandvoort,Circuit Park Zandvoort,,29,Niki Lauda,McLaren
+415,1985,monza,Autodromo Nazionale di Monza,,18,Alain Prost,McLaren
+416,1985,spa,Circuit de Spa-Francorchamps,,16,Ayrton Senna,Team Lotus
+417,1985,brands_hatch,Brands Hatch,,10,Nigel Mansell,Williams
+418,1985,kyalami,Kyalami,,25,Nigel Mansell,Williams
+419,1985,adelaide,Adelaide Street Circuit,,63,Keke Rosberg,Williams
+420,1986,jacarepagua,Autódromo Internacional Nelson Piquet,,16,Nelson Piquet,Williams
+421,1986,jerez,Circuito de Jerez,,7,Ayrton Senna,Team Lotus
+422,1986,imola,Autodromo Enzo e Dino Ferrari,,13,Alain Prost,McLaren
+423,1986,monaco,Circuit de Monaco,,16,Alain Prost,McLaren
+424,1986,spa,Circuit de Spa-Francorchamps,,31,Nigel Mansell,Williams
+425,1986,villeneuve,Circuit Gilles Villeneuve,,7,Nigel Mansell,Williams
+426,1986,detroit,Detroit Street Circuit,,18,Ayrton Senna,Team Lotus
+427,1986,ricard,Circuit Paul Ricard,,8,Nigel Mansell,Williams
+428,1986,brands_hatch,Brands Hatch,,15,Nigel Mansell,Williams
+429,1986,hockenheimring,Hockenheimring,,16,Nelson Piquet,Williams
+430,1986,hungaroring,Hungaroring,,9,Nelson Piquet,Williams
+431,1986,red_bull_ring,Red Bull Ring,,42,Alain Prost,McLaren
+432,1986,monza,Autodromo Nazionale di Monza,,20,Nelson Piquet,Williams
+433,1986,estoril,Autódromo do Estoril,,16,Nigel Mansell,Williams
+434,1986,rodriguez,Autódromo Hermanos Rodríguez,,13,Gerhard Berger,Benetton
+435,1986,adelaide,Adelaide Street Circuit,,29,Alain Prost,McLaren
+436,1987,jacarepagua,Autódromo Internacional Nelson Piquet,,15,Alain Prost,McLaren
+437,1987,imola,Autodromo Enzo e Dino Ferrari,,18,Nigel Mansell,Williams
+438,1987,spa,Circuit de Spa-Francorchamps,,40,Alain Prost,McLaren
+439,1987,monaco,Circuit de Monaco,,18,Ayrton Senna,Team Lotus
+440,1987,detroit,Detroit Street Circuit,,16,Ayrton Senna,Team Lotus
+441,1987,ricard,Circuit Paul Ricard,,6,Nigel Mansell,Williams
+442,1987,silverstone,Silverstone Circuit,,18,Nigel Mansell,Williams
+443,1987,hockenheimring,Hockenheimring,,46,Nelson Piquet,Williams
+444,1987,hungaroring,Hungaroring,,15,Nelson Piquet,Williams
+445,1987,red_bull_ring,Red Bull Ring,,6,Nigel Mansell,Williams
+446,1987,monza,Autodromo Nazionale di Monza,,5,Nelson Piquet,Williams
+447,1987,estoril,Autódromo do Estoril,,13,Alain Prost,McLaren
+448,1987,jerez,Circuito de Jerez,,17,Nigel Mansell,Williams
+449,1987,rodriguez,Autódromo Hermanos Rodríguez,,16,Nigel Mansell,Williams
+450,1987,suzuka,Suzuka Circuit,,13,Gerhard Berger,Ferrari
+451,1987,adelaide,Adelaide Street Circuit,,37,Gerhard Berger,Ferrari
+452,1988,jacarepagua,Autódromo Internacional Nelson Piquet,,14,Alain Prost,McLaren
+453,1988,imola,Autodromo Enzo e Dino Ferrari,,4,Ayrton Senna,McLaren
+454,1988,monaco,Circuit de Monaco,,11,Alain Prost,McLaren
+455,1988,rodriguez,Autódromo Hermanos Rodríguez,,7,Alain Prost,McLaren
+456,1988,villeneuve,Circuit Gilles Villeneuve,,15,Ayrton Senna,McLaren
+457,1988,detroit,Detroit Street Circuit,,24,Ayrton Senna,McLaren
+458,1988,ricard,Circuit Paul Ricard,,4,Alain Prost,McLaren
+459,1988,silverstone,Silverstone Circuit,,19,Ayrton Senna,McLaren
+460,1988,hockenheimring,Hockenheimring,,2,Ayrton Senna,McLaren
+461,1988,hungaroring,Hungaroring,,13,Ayrton Senna,McLaren
+462,1988,spa,Circuit de Spa-Francorchamps,,21,Ayrton Senna,McLaren
+463,1988,monza,Autodromo Nazionale di Monza,,14,Gerhard Berger,Ferrari
+464,1988,estoril,Autódromo do Estoril,,19,Alain Prost,McLaren
+465,1988,jerez,Circuito de Jerez,,9,Alain Prost,McLaren
+466,1988,suzuka,Suzuka Circuit,,15,Ayrton Senna,McLaren
+467,1988,adelaide,Adelaide Street Circuit,,11,Alain Prost,McLaren
+468,1989,jacarepagua,Autódromo Internacional Nelson Piquet,,26,Nigel Mansell,Ferrari
+469,1989,imola,Autodromo Enzo e Dino Ferrari,,13,Ayrton Senna,McLaren
+470,1989,monaco,Circuit de Monaco,,17,Ayrton Senna,McLaren
+471,1989,rodriguez,Autódromo Hermanos Rodríguez,,19,Ayrton Senna,McLaren
+472,1989,phoenix,Phoenix street circuit,,69,Alain Prost,McLaren
+473,1989,villeneuve,Circuit Gilles Villeneuve,,44,Thierry Boutsen,Williams
+474,1989,ricard,Circuit Paul Ricard,,26,Alain Prost,McLaren
+475,1989,silverstone,Silverstone Circuit,,20,Alain Prost,McLaren
+476,1989,hockenheimring,Hockenheimring,,4,Ayrton Senna,McLaren
+477,1989,hungaroring,Hungaroring,,24,Nigel Mansell,Ferrari
+478,1989,spa,Circuit de Spa-Francorchamps,,5,Ayrton Senna,McLaren
+479,1989,monza,Autodromo Nazionale di Monza,,12,Alain Prost,McLaren
+480,1989,estoril,Autódromo do Estoril,,21,Gerhard Berger,Ferrari
+481,1989,jerez,Circuito de Jerez,,6,Ayrton Senna,McLaren
+482,1989,suzuka,Suzuka Circuit,,27,Alessandro Nannini,Benetton
+483,1989,adelaide,Adelaide Street Circuit,,36,Thierry Boutsen,Williams
+484,1990,phoenix,Phoenix street circuit,,19,Ayrton Senna,McLaren
+485,1990,interlagos,Autódromo José Carlos Pace,,10,Alain Prost,Ferrari
+486,1990,imola,Autodromo Enzo e Dino Ferrari,,13,Riccardo Patrese,Williams
+487,1990,monaco,Circuit de Monaco,,22,Ayrton Senna,McLaren
+488,1990,villeneuve,Circuit Gilles Villeneuve,,11,Ayrton Senna,McLaren
+489,1990,rodriguez,Autódromo Hermanos Rodríguez,,26,Alain Prost,Ferrari
+490,1990,ricard,Circuit Paul Ricard,,16,Alain Prost,Ferrari
+491,1990,silverstone,Silverstone Circuit,,17,Alain Prost,Ferrari
+492,1990,hockenheimring,Hockenheimring,,9,Ayrton Senna,McLaren
+493,1990,hungaroring,Hungaroring,,16,Thierry Boutsen,Williams
+494,1990,spa,Circuit de Spa-Francorchamps,,7,Ayrton Senna,McLaren
+495,1990,monza,Autodromo Nazionale di Monza,,2,Ayrton Senna,McLaren
+496,1990,estoril,Autódromo do Estoril,,3,Nigel Mansell,Ferrari
+497,1990,jerez,Circuito de Jerez,,12,Alain Prost,Ferrari
+498,1990,suzuka,Suzuka Circuit,,20,Nelson Piquet,Benetton
+499,1990,adelaide,Adelaide Street Circuit,,14,Nelson Piquet,Benetton
+500,1991,phoenix,Phoenix street circuit,,20,Ayrton Senna,McLaren
+501,1991,interlagos,Autódromo José Carlos Pace,,5,Ayrton Senna,McLaren
+502,1991,imola,Autodromo Enzo e Dino Ferrari,,41,Ayrton Senna,McLaren
+503,1991,monaco,Circuit de Monaco,,15,Ayrton Senna,McLaren
+504,1991,villeneuve,Circuit Gilles Villeneuve,,32,Nelson Piquet,Benetton
+505,1991,rodriguez,Autódromo Hermanos Rodríguez,,11,Riccardo Patrese,Williams
+506,1991,magny_cours,Circuit de Nevers Magny-Cours,,9,Nigel Mansell,Williams
+507,1991,silverstone,Silverstone Circuit,,9,Nigel Mansell,Williams
+508,1991,hockenheimring,Hockenheimring,,8,Nigel Mansell,Williams
+509,1991,hungaroring,Hungaroring,,4,Ayrton Senna,McLaren
+510,1991,spa,Circuit de Spa-Francorchamps,,21,Ayrton Senna,McLaren
+511,1991,monza,Autodromo Nazionale di Monza,,7,Nigel Mansell,Williams
+512,1991,estoril,Autódromo do Estoril,,14,Riccardo Patrese,Williams
+513,1991,catalunya,Circuit de Barcelona-Catalunya,,11,Nigel Mansell,Williams
+514,1991,suzuka,Suzuka Circuit,,16,Gerhard Berger,McLaren
+515,1991,adelaide,Adelaide Street Circuit,12.634250000000002,4,Ayrton Senna,McLaren
+516,1992,kyalami,Kyalami,,7,Nigel Mansell,Williams
+517,1992,rodriguez,Autódromo Hermanos Rodríguez,,7,Nigel Mansell,Williams
+518,1992,interlagos,Autódromo José Carlos Pace,,10,Nigel Mansell,Williams
+519,1992,catalunya,Circuit de Barcelona-Catalunya,,19,Nigel Mansell,Williams
+520,1992,imola,Autodromo Enzo e Dino Ferrari,,6,Nigel Mansell,Williams
+521,1992,monaco,Circuit de Monaco,,8,Ayrton Senna,McLaren
+522,1992,villeneuve,Circuit Gilles Villeneuve,,28,Gerhard Berger,McLaren
+523,1992,magny_cours,Circuit de Nevers Magny-Cours,,16,Nigel Mansell,Williams
+524,1992,silverstone,Silverstone Circuit,,3,Nigel Mansell,Williams
+525,1992,hockenheimring,Hockenheimring,,9,Nigel Mansell,Williams
+526,1992,hungaroring,Hungaroring,,17,Ayrton Senna,McLaren
+527,1992,spa,Circuit de Spa-Francorchamps,,12,Michael Schumacher,Benetton
+528,1992,monza,Autodromo Nazionale di Monza,,13,Ayrton Senna,McLaren
+529,1992,estoril,Autódromo do Estoril,,6,Nigel Mansell,Williams
+530,1992,suzuka,Suzuka Circuit,,28,Riccardo Patrese,Williams
+531,1992,adelaide,Adelaide Street Circuit,,30,Gerhard Berger,McLaren
+532,1993,kyalami,Kyalami,,15,Alain Prost,Williams
+533,1993,interlagos,Autódromo José Carlos Pace,,16,Ayrton Senna,McLaren
+534,1993,donington,Donington Park,,17,Ayrton Senna,McLaren
+535,1993,imola,Autodromo Enzo e Dino Ferrari,,29,Alain Prost,Williams
+536,1993,catalunya,Circuit de Barcelona-Catalunya,,5,Alain Prost,Williams
+537,1993,monaco,Circuit de Monaco,,21,Ayrton Senna,McLaren
+538,1993,villeneuve,Circuit Gilles Villeneuve,,5,Alain Prost,Williams
+539,1993,magny_cours,Circuit de Nevers Magny-Cours,,9,Alain Prost,Williams
+540,1993,silverstone,Silverstone Circuit,,7,Alain Prost,Williams
+541,1993,hockenheimring,Hockenheimring,,5,Alain Prost,Williams
+542,1993,hungaroring,Hungaroring,,20,Damon Hill,Williams
+543,1993,spa,Circuit de Spa-Francorchamps,,10,Damon Hill,Williams
+544,1993,monza,Autodromo Nazionale di Monza,,24,Damon Hill,Williams
+545,1993,estoril,Autódromo do Estoril,,16,Michael Schumacher,Benetton
+546,1993,suzuka,Suzuka Circuit,,11,Ayrton Senna,McLaren
+547,1993,adelaide,Adelaide Street Circuit,,4,Ayrton Senna,McLaren
+548,1994,interlagos,Autódromo José Carlos Pace,,18,Michael Schumacher,Benetton
+549,1994,okayama,Okayama International Circuit,,20,Michael Schumacher,Benetton
+550,1994,imola,Autodromo Enzo e Dino Ferrari,,20,Michael Schumacher,Benetton
+551,1994,monaco,Circuit de Monaco,,16,Michael Schumacher,Benetton
+552,1994,catalunya,Circuit de Barcelona-Catalunya,,25,Damon Hill,Williams
+553,1994,villeneuve,Circuit Gilles Villeneuve,,4,Michael Schumacher,Benetton
+554,1994,magny_cours,Circuit de Nevers Magny-Cours,,22,Michael Schumacher,Benetton
+555,1994,silverstone,Silverstone Circuit,,8,Damon Hill,Williams
+556,1994,hockenheimring,Hockenheimring,,45,Gerhard Berger,Ferrari
+557,1994,hungaroring,Hungaroring,,17,Michael Schumacher,Benetton
+558,1994,spa,Circuit de Spa-Francorchamps,,21,Damon Hill,Williams
+559,1994,monza,Autodromo Nazionale di Monza,,28,Damon Hill,Williams
+560,1994,estoril,Autódromo do Estoril,,12,Damon Hill,Williams
+561,1994,jerez,Circuito de Jerez,,13,Michael Schumacher,Benetton
+562,1994,suzuka,Suzuka Circuit,,7,Damon Hill,Williams
+563,1994,adelaide,Adelaide Street Circuit,,23,Nigel Mansell,Williams
+564,1995,interlagos,Autódromo José Carlos Pace,,8,Michael Schumacher,Benetton
+565,1995,galvez,Autódromo Juan y Oscar Gálvez,,16,Damon Hill,Williams
+566,1995,imola,Autodromo Enzo e Dino Ferrari,,9,Damon Hill,Williams
+567,1995,catalunya,Circuit de Barcelona-Catalunya,,7,Michael Schumacher,Benetton
+568,1995,monaco,Circuit de Monaco,,11,Michael Schumacher,Benetton
+569,1995,villeneuve,Circuit Gilles Villeneuve,,27,Jean Alesi,Ferrari
+570,1995,magny_cours,Circuit de Nevers Magny-Cours,,8,Michael Schumacher,Benetton
+571,1995,silverstone,Silverstone Circuit,,22,Johnny Herbert,Benetton
+572,1995,hockenheimring,Hockenheimring,,17,Michael Schumacher,Benetton
+573,1995,hungaroring,Hungaroring,,12,Damon Hill,Williams
+574,1995,spa,Circuit de Spa-Francorchamps,,38,Michael Schumacher,Benetton
+575,1995,monza,Autodromo Nazionale di Monza,,35,Johnny Herbert,Benetton
+576,1995,estoril,Autódromo do Estoril,,4,David Coulthard,Williams
+577,1995,nurburgring,Nürburgring,,17,Michael Schumacher,Benetton
+578,1995,okayama,Okayama International Circuit,,6,Michael Schumacher,Benetton
+579,1995,suzuka,Suzuka Circuit,,16,Michael Schumacher,Benetton
+580,1995,adelaide,Adelaide Street Circuit,,35,Damon Hill,Williams
+581,1996,albert_park,Albert Park Grand Prix Circuit,,5,Damon Hill,Williams
+582,1996,interlagos,Autódromo José Carlos Pace,,13,Damon Hill,Williams
+583,1996,galvez,Autódromo Juan y Oscar Gálvez,,9,Damon Hill,Williams
+584,1996,nurburgring,Nürburgring,,8,Jacques Villeneuve,Williams
+585,1996,imola,Autodromo Enzo e Dino Ferrari,,12,Damon Hill,Williams
+586,1996,monaco,Circuit de Monaco,,37,Olivier Panis,Ligier
+587,1996,catalunya,Circuit de Barcelona-Catalunya,,17,Michael Schumacher,Ferrari
+588,1996,villeneuve,Circuit Gilles Villeneuve,,8,Damon Hill,Williams
+589,1996,magny_cours,Circuit de Nevers Magny-Cours,,5,Damon Hill,Williams
+590,1996,silverstone,Silverstone Circuit,,13,Jacques Villeneuve,Williams
+591,1996,hockenheimring,Hockenheimring,,9,Damon Hill,Williams
+592,1996,hungaroring,Hungaroring,,13,Jacques Villeneuve,Williams
+593,1996,spa,Circuit de Spa-Francorchamps,,12,Michael Schumacher,Ferrari
+594,1996,monza,Autodromo Nazionale di Monza,,17,Michael Schumacher,Ferrari
+595,1996,estoril,Autódromo do Estoril,,5,Jacques Villeneuve,Williams
+596,1996,suzuka,Suzuka Circuit,,9,Damon Hill,Williams
+597,1997,albert_park,Albert Park Grand Prix Circuit,,17,David Coulthard,McLaren
+598,1997,interlagos,Autódromo José Carlos Pace,,6,Jacques Villeneuve,Williams
+599,1997,galvez,Autódromo Juan y Oscar Gálvez,,24,Jacques Villeneuve,Williams
+600,1997,imola,Autodromo Enzo e Dino Ferrari,,19,Heinz-Harald Frentzen,Williams
+601,1997,monaco,Circuit de Monaco,,38,Michael Schumacher,Ferrari
+602,1997,catalunya,Circuit de Barcelona-Catalunya,,19,Jacques Villeneuve,Williams
+603,1997,villeneuve,Circuit Gilles Villeneuve,,17,Michael Schumacher,Ferrari
+604,1997,magny_cours,Circuit de Nevers Magny-Cours,,5,Michael Schumacher,Ferrari
+605,1997,silverstone,Silverstone Circuit,,16,Jacques Villeneuve,Williams
+606,1997,hockenheimring,Hockenheimring,,11,Gerhard Berger,Benetton
+607,1997,hungaroring,Hungaroring,,21,Jacques Villeneuve,Williams
+608,1997,spa,Circuit de Spa-Francorchamps,,19,Michael Schumacher,Ferrari
+609,1997,monza,Autodromo Nazionale di Monza,,9,David Coulthard,McLaren
+610,1997,red_bull_ring,Red Bull Ring,,25,Jacques Villeneuve,Williams
+611,1997,nurburgring,Nürburgring,,22,Jacques Villeneuve,Williams
+612,1997,suzuka,Suzuka Circuit,,7,Michael Schumacher,Ferrari
+613,1997,jerez,Circuito de Jerez,,16,Mika Häkkinen,McLaren
+614,1998,albert_park,Albert Park Grand Prix Circuit,,8,Mika Häkkinen,McLaren
+615,1998,interlagos,Autódromo José Carlos Pace,,4,Mika Häkkinen,McLaren
+616,1998,galvez,Autódromo Juan y Oscar Gálvez,,13,Michael Schumacher,Ferrari
+617,1998,imola,Autodromo Enzo e Dino Ferrari,,7,David Coulthard,McLaren
+618,1998,catalunya,Circuit de Barcelona-Catalunya,,5,Mika Häkkinen,McLaren
+619,1998,monaco,Circuit de Monaco,,17,Mika Häkkinen,McLaren
+620,1998,villeneuve,Circuit Gilles Villeneuve,,24,Michael Schumacher,Ferrari
+621,1998,magny_cours,Circuit de Nevers Magny-Cours,,11,Michael Schumacher,Ferrari
+622,1998,silverstone,Silverstone Circuit,,16,Michael Schumacher,Ferrari
+623,1998,red_bull_ring,Red Bull Ring,,23,Mika Häkkinen,McLaren
+624,1998,hockenheimring,Hockenheimring,,5,Mika Häkkinen,McLaren
+625,1998,hungaroring,Hungaroring,,7,Michael Schumacher,Ferrari
+626,1998,spa,Circuit de Spa-Francorchamps,,31,Damon Hill,Jordan
+627,1998,monza,Autodromo Nazionale di Monza,,10,Michael Schumacher,Ferrari
+628,1998,nurburgring,Nürburgring,,9,Mika Häkkinen,McLaren
+629,1998,suzuka,Suzuka Circuit,,7,Mika Häkkinen,McLaren
+630,1999,albert_park,Albert Park Grand Prix Circuit,,17,Eddie Irvine,Ferrari
+631,1999,interlagos,Autódromo José Carlos Pace,,15,Mika Häkkinen,McLaren
+632,1999,imola,Autodromo Enzo e Dino Ferrari,,20,Michael Schumacher,Ferrari
+633,1999,monaco,Circuit de Monaco,,11,Michael Schumacher,Ferrari
+634,1999,catalunya,Circuit de Barcelona-Catalunya,,9,Mika Häkkinen,McLaren
+635,1999,villeneuve,Circuit Gilles Villeneuve,,20,Mika Häkkinen,McLaren
+636,1999,magny_cours,Circuit de Nevers Magny-Cours,,31,Heinz-Harald Frentzen,Jordan
+637,1999,silverstone,Silverstone Circuit,,11,David Coulthard,McLaren
+638,1999,red_bull_ring,Red Bull Ring,,9,Eddie Irvine,Ferrari
+639,1999,hockenheimring,Hockenheimring,,16,Eddie Irvine,Ferrari
+640,1999,hungaroring,Hungaroring,,6,Mika Häkkinen,McLaren
+641,1999,spa,Circuit de Spa-Francorchamps,,4,David Coulthard,McLaren
+642,1999,monza,Autodromo Nazionale di Monza,,12,Heinz-Harald Frentzen,Jordan
+643,1999,nurburgring,Nürburgring,,35,Johnny Herbert,Stewart
+644,1999,sepang,Sepang International Circuit,,5,Eddie Irvine,Ferrari
+645,1999,suzuka,Suzuka Circuit,,8,Mika Häkkinen,McLaren
+646,2000,albert_park,Albert Park Grand Prix Circuit,,20,Michael Schumacher,Ferrari
+647,2000,interlagos,Autódromo José Carlos Pace,,23,Michael Schumacher,Ferrari
+648,2000,imola,Autodromo Enzo e Dino Ferrari,,6,Michael Schumacher,Ferrari
+649,2000,silverstone,Silverstone Circuit,,10,David Coulthard,McLaren
+650,2000,catalunya,Circuit de Barcelona-Catalunya,,8,Mika Häkkinen,McLaren
+651,2000,nurburgring,Nürburgring,,6,Michael Schumacher,Ferrari
+652,2000,monaco,Circuit de Monaco,,25,David Coulthard,McLaren
+653,2000,villeneuve,Circuit Gilles Villeneuve,,16,Michael Schumacher,Ferrari
+654,2000,magny_cours,Circuit de Nevers Magny-Cours,,6,David Coulthard,McLaren
+655,2000,red_bull_ring,Red Bull Ring,,16,Mika Häkkinen,McLaren
+656,2000,hockenheimring,Hockenheimring,,43,Rubens Barrichello,Ferrari
+657,2000,hungaroring,Hungaroring,,6,Mika Häkkinen,McLaren
+658,2000,spa,Circuit de Spa-Francorchamps,,8,Mika Häkkinen,McLaren
+659,2000,monza,Autodromo Nazionale di Monza,,20,Michael Schumacher,Ferrari
+660,2000,indianapolis,Indianapolis Motor Speedway,,13,Michael Schumacher,Ferrari
+661,2000,suzuka,Suzuka Circuit,,0,Michael Schumacher,Ferrari
+662,2000,sepang,Sepang International Circuit,,5,Michael Schumacher,Ferrari
+663,2001,albert_park,Albert Park Grand Prix Circuit,,12,Michael Schumacher,Ferrari
+664,2001,sepang,Sepang International Circuit,,12,Michael Schumacher,Ferrari
+665,2001,interlagos,Autódromo José Carlos Pace,,20,David Coulthard,McLaren
+666,2001,imola,Autodromo Enzo e Dino Ferrari,,8,Ralf Schumacher,Williams
+667,2001,catalunya,Circuit de Barcelona-Catalunya,,18,Michael Schumacher,Ferrari
+668,2001,red_bull_ring,Red Bull Ring,,18,David Coulthard,McLaren
+669,2001,monaco,Circuit de Monaco,,15,Michael Schumacher,Ferrari
+670,2001,villeneuve,Circuit Gilles Villeneuve,,21,Ralf Schumacher,Williams
+671,2001,nurburgring,Nürburgring,,6,Michael Schumacher,Ferrari
+672,2001,magny_cours,Circuit de Nevers Magny-Cours,,8,Michael Schumacher,Ferrari
+673,2001,silverstone,Silverstone Circuit,,11,Mika Häkkinen,McLaren
+674,2001,hockenheimring,Hockenheimring,,40,Ralf Schumacher,Williams
+675,2001,hungaroring,Hungaroring,,3,Michael Schumacher,Ferrari
+676,2001,spa,Circuit de Spa-Francorchamps,,17,Michael Schumacher,Ferrari
+677,2001,monza,Autodromo Nazionale di Monza,,7,Juan Pablo Montoya,Williams
+678,2001,indianapolis,Indianapolis Motor Speedway,,21,Mika Häkkinen,McLaren
+679,2001,suzuka,Suzuka Circuit,,6,Michael Schumacher,Ferrari
+680,2002,albert_park,Albert Park Grand Prix Circuit,,35,Michael Schumacher,Ferrari
+681,2002,sepang,Sepang International Circuit,,11,Ralf Schumacher,Williams
+682,2002,interlagos,Autódromo José Carlos Pace,,10,Michael Schumacher,Ferrari
+683,2002,imola,Autodromo Enzo e Dino Ferrari,,4,Michael Schumacher,Ferrari
+684,2002,catalunya,Circuit de Barcelona-Catalunya,,16,Michael Schumacher,Ferrari
+685,2002,red_bull_ring,Red Bull Ring,,16,Michael Schumacher,Ferrari
+686,2002,monaco,Circuit de Monaco,,12,David Coulthard,McLaren
+687,2002,villeneuve,Circuit Gilles Villeneuve,,9,Michael Schumacher,Ferrari
+688,2002,nurburgring,Nürburgring,,12,Rubens Barrichello,Ferrari
+689,2002,silverstone,Silverstone Circuit,,17,Michael Schumacher,Ferrari
+690,2002,magny_cours,Circuit de Nevers Magny-Cours,,9,Michael Schumacher,Ferrari
+691,2002,hockenheimring,Hockenheimring,,8,Michael Schumacher,Ferrari
+692,2002,hungaroring,Hungaroring,,12,Rubens Barrichello,Ferrari
+693,2002,spa,Circuit de Spa-Francorchamps,,6,Michael Schumacher,Ferrari
+694,2002,monza,Autodromo Nazionale di Monza,,24,Rubens Barrichello,Ferrari
+695,2002,indianapolis,Indianapolis Motor Speedway,,5,Rubens Barrichello,Ferrari
+696,2002,suzuka,Suzuka Circuit,,5,Michael Schumacher,Ferrari
+697,2003,albert_park,Albert Park Grand Prix Circuit,,33,David Coulthard,McLaren
+698,2003,sepang,Sepang International Circuit,,27,Kimi Räikkönen,McLaren
+699,2003,interlagos,Autódromo José Carlos Pace,,27,Giancarlo Fisichella,Jordan
+700,2003,imola,Autodromo Enzo e Dino Ferrari,,13,Michael Schumacher,Ferrari
+701,2003,catalunya,Circuit de Barcelona-Catalunya,,9,Michael Schumacher,Ferrari
+702,2003,red_bull_ring,Red Bull Ring,,14,Michael Schumacher,Ferrari
+703,2003,monaco,Circuit de Monaco,,10,Juan Pablo Montoya,Williams
+704,2003,villeneuve,Circuit Gilles Villeneuve,,4,Michael Schumacher,Ferrari
+705,2003,nurburgring,Nürburgring,,13,Ralf Schumacher,Williams
+706,2003,magny_cours,Circuit de Nevers Magny-Cours,,0,Ralf Schumacher,Williams
+707,2003,silverstone,Silverstone Circuit,,13,Rubens Barrichello,Ferrari
+708,2003,hockenheimring,Hockenheimring,,15,Juan Pablo Montoya,Williams
+709,2003,hungaroring,Hungaroring,,12,Fernando Alonso,Renault
+710,2003,monza,Autodromo Nazionale di Monza,,0,Michael Schumacher,Ferrari
+711,2003,indianapolis,Indianapolis Motor Speedway,,33,Michael Schumacher,Ferrari
+712,2003,suzuka,Suzuka Circuit,,30,Rubens Barrichello,Ferrari
+713,2004,albert_park,Albert Park Grand Prix Circuit,,8,Michael Schumacher,Ferrari
+714,2004,sepang,Sepang International Circuit,,9,Michael Schumacher,Ferrari
+715,2004,bahrain,Bahrain International Circuit,,6,Michael Schumacher,Ferrari
+716,2004,imola,Autodromo Enzo e Dino Ferrari,,8,Michael Schumacher,Ferrari
+717,2004,catalunya,Circuit de Barcelona-Catalunya,,10,Michael Schumacher,Ferrari
+718,2004,monaco,Circuit de Monaco,,19,Jarno Trulli,Renault
+719,2004,nurburgring,Nürburgring,,9,Michael Schumacher,Ferrari
+720,2004,villeneuve,Circuit Gilles Villeneuve,,21,Michael Schumacher,Ferrari
+721,2004,indianapolis,Indianapolis Motor Speedway,,21,Michael Schumacher,Ferrari
+722,2004,magny_cours,Circuit de Nevers Magny-Cours,,11,Michael Schumacher,Ferrari
+723,2004,silverstone,Silverstone Circuit,,8,Michael Schumacher,Ferrari
+724,2004,hockenheimring,Hockenheimring,,16,Michael Schumacher,Ferrari
+725,2004,hungaroring,Hungaroring,,6,Michael Schumacher,Ferrari
+726,2004,spa,Circuit de Spa-Francorchamps,,16,Kimi Räikkönen,McLaren
+727,2004,monza,Autodromo Nazionale di Monza,,8,Rubens Barrichello,Ferrari
+728,2004,shanghai,Shanghai International Circuit,,9,Rubens Barrichello,Ferrari
+729,2004,suzuka,Suzuka Circuit,,8,Michael Schumacher,Ferrari
+730,2004,interlagos,Autódromo José Carlos Pace,,10,Juan Pablo Montoya,Williams
+731,2005,albert_park,Albert Park Grand Prix Circuit,,22,Giancarlo Fisichella,Renault
+732,2005,sepang,Sepang International Circuit,,14,Fernando Alonso,Renault
+733,2005,bahrain,Bahrain International Circuit,,12,Fernando Alonso,Renault
+734,2005,imola,Autodromo Enzo e Dino Ferrari,,23,Fernando Alonso,Renault
+735,2005,catalunya,Circuit de Barcelona-Catalunya,,4,Kimi Räikkönen,McLaren
+736,2005,monaco,Circuit de Monaco,,17,Kimi Räikkönen,McLaren
+737,2005,nurburgring,Nürburgring,,23,Fernando Alonso,Renault
+738,2005,villeneuve,Circuit Gilles Villeneuve,,39,Kimi Räikkönen,McLaren
+739,2005,indianapolis,Indianapolis Motor Speedway,,51,Michael Schumacher,Ferrari
+740,2005,magny_cours,Circuit de Nevers Magny-Cours,,17,Fernando Alonso,Renault
+741,2005,silverstone,Silverstone Circuit,,17,Juan Pablo Montoya,McLaren
+742,2005,hockenheimring,Hockenheimring,,21,Fernando Alonso,Renault
+743,2005,hungaroring,Hungaroring,,10,Kimi Räikkönen,McLaren
+744,2005,istanbul,Istanbul Park,,12,Kimi Räikkönen,McLaren
+745,2005,monza,Autodromo Nazionale di Monza,,12,Juan Pablo Montoya,McLaren
+746,2005,spa,Circuit de Spa-Francorchamps,,20,Kimi Räikkönen,McLaren
+747,2005,interlagos,Autódromo José Carlos Pace,,11,Juan Pablo Montoya,McLaren
+748,2005,suzuka,Suzuka Circuit,,36,Kimi Räikkönen,McLaren
+749,2005,shanghai,Shanghai International Circuit,,18,Fernando Alonso,Renault
+750,2006,bahrain,Bahrain International Circuit,,24,Fernando Alonso,Renault
+751,2006,sepang,Sepang International Circuit,,23,Giancarlo Fisichella,Renault
+752,2006,albert_park,Albert Park Grand Prix Circuit,,14,Fernando Alonso,Renault
+753,2006,imola,Autodromo Enzo e Dino Ferrari,,10,Michael Schumacher,Ferrari
+754,2006,nurburgring,Nürburgring,,4,Michael Schumacher,Ferrari
+755,2006,catalunya,Circuit de Barcelona-Catalunya,,6,Fernando Alonso,Renault
+756,2006,monaco,Circuit de Monaco,,24,Fernando Alonso,Renault
+757,2006,silverstone,Silverstone Circuit,,4,Fernando Alonso,Renault
+758,2006,villeneuve,Circuit Gilles Villeneuve,,10,Fernando Alonso,Renault
+759,2006,indianapolis,Indianapolis Motor Speedway,,18,Michael Schumacher,Ferrari
+760,2006,magny_cours,Circuit de Nevers Magny-Cours,,4,Michael Schumacher,Ferrari
+761,2006,hockenheimring,Hockenheimring,,6,Michael Schumacher,Ferrari
+762,2006,hungaroring,Hungaroring,,30,Jenson Button,Honda
+763,2006,istanbul,Istanbul Park,,10,Felipe Massa,Ferrari
+764,2006,monza,Autodromo Nazionale di Monza,,10,Michael Schumacher,Ferrari
+765,2006,shanghai,Shanghai International Circuit,,9,Michael Schumacher,Ferrari
+766,2006,suzuka,Suzuka Circuit,,17,Fernando Alonso,Renault
+767,2006,interlagos,Autódromo José Carlos Pace,,22,Felipe Massa,Ferrari
+768,2007,albert_park,Albert Park Grand Prix Circuit,,3,Kimi Räikkönen,Ferrari
+769,2007,sepang,Sepang International Circuit,,8,Fernando Alonso,McLaren
+770,2007,bahrain,Bahrain International Circuit,,2,Felipe Massa,Ferrari
+771,2007,catalunya,Circuit de Barcelona-Catalunya,,8,Felipe Massa,Ferrari
+772,2007,monaco,Circuit de Monaco,,3,Fernando Alonso,McLaren
+773,2007,villeneuve,Circuit Gilles Villeneuve,,36,Lewis Hamilton,McLaren
+774,2007,indianapolis,Indianapolis Motor Speedway,,1,Lewis Hamilton,McLaren
+775,2007,magny_cours,Circuit de Nevers Magny-Cours,,6,Kimi Räikkönen,Ferrari
+776,2007,silverstone,Silverstone Circuit,,6,Kimi Räikkönen,Ferrari
+777,2007,nurburgring,Nürburgring,,28,Fernando Alonso,McLaren
+778,2007,hungaroring,Hungaroring,,6,Lewis Hamilton,McLaren
+779,2007,istanbul,Istanbul Park,,7,Felipe Massa,Ferrari
+780,2007,monza,Autodromo Nazionale di Monza,,3,Fernando Alonso,McLaren
+781,2007,spa,Circuit de Spa-Francorchamps,,1,Kimi Räikkönen,Ferrari
+782,2007,fuji,Fuji Speedway,,22,Lewis Hamilton,McLaren
+783,2007,shanghai,Shanghai International Circuit,,21,Kimi Räikkönen,Ferrari
+784,2007,interlagos,Autódromo José Carlos Pace,,12,Kimi Räikkönen,Ferrari
+785,2008,albert_park,Albert Park Grand Prix Circuit,,16,Lewis Hamilton,McLaren
+786,2008,sepang,Sepang International Circuit,,13,Kimi Räikkönen,Ferrari
+787,2008,bahrain,Bahrain International Circuit,,7,Felipe Massa,Ferrari
+788,2008,catalunya,Circuit de Barcelona-Catalunya,,5,Kimi Räikkönen,Ferrari
+789,2008,istanbul,Istanbul Park,,7,Felipe Massa,Ferrari
+790,2008,monaco,Circuit de Monaco,,26,Lewis Hamilton,McLaren
+791,2008,villeneuve,Circuit Gilles Villeneuve,,25,Robert Kubica,BMW Sauber
+792,2008,magny_cours,Circuit de Nevers Magny-Cours,,9,Felipe Massa,Ferrari
+793,2008,silverstone,Silverstone Circuit,,24,Lewis Hamilton,McLaren
+794,2008,hockenheimring,Hockenheimring,,26,Lewis Hamilton,McLaren
+795,2008,hungaroring,Hungaroring,,14,Heikki Kovalainen,McLaren
+796,2008,valencia,Valencia Street Circuit,,3,Felipe Massa,Ferrari
+797,2008,spa,Circuit de Spa-Francorchamps,,13,Felipe Massa,Ferrari
+798,2008,monza,Autodromo Nazionale di Monza,,17,Sebastian Vettel,Toro Rosso
+799,2008,marina_bay,Marina Bay Street Circuit,,25,Fernando Alonso,Renault
+800,2008,fuji,Fuji Speedway,,18,Fernando Alonso,Renault
+801,2008,shanghai,Shanghai International Circuit,,6,Lewis Hamilton,McLaren
+802,2008,interlagos,Autódromo José Carlos Pace,,8,Felipe Massa,Ferrari
+803,2009,albert_park,Albert Park Grand Prix Circuit,,37,Jenson Button,Brawn
+804,2009,sepang,Sepang International Circuit,,13,Jenson Button,Brawn
+805,2009,shanghai,Shanghai International Circuit,,10,Sebastian Vettel,Red Bull
+806,2009,bahrain,Bahrain International Circuit,,8,Jenson Button,Brawn
+807,2009,catalunya,Circuit de Barcelona-Catalunya,,8,Jenson Button,Brawn
+808,2009,monaco,Circuit de Monaco,,6,Jenson Button,Brawn
+809,2009,istanbul,Istanbul Park,,10,Jenson Button,Brawn
+810,2009,silverstone,Silverstone Circuit,,11,Sebastian Vettel,Red Bull
+811,2009,nurburgring,Nürburgring,,20,Mark Webber,Red Bull
+812,2009,hungaroring,Hungaroring,,10,Lewis Hamilton,McLaren
+813,2009,valencia,Valencia Street Circuit,,10,Rubens Barrichello,Brawn
+814,2009,spa,Circuit de Spa-Francorchamps,,14,Kimi Räikkönen,Ferrari
+815,2009,monza,Autodromo Nazionale di Monza,,13,Rubens Barrichello,Brawn
+816,2009,marina_bay,Marina Bay Street Circuit,,14,Lewis Hamilton,McLaren
+817,2009,suzuka,Suzuka Circuit,,3,Sebastian Vettel,Red Bull
+818,2009,interlagos,Autódromo José Carlos Pace,,41,Mark Webber,Red Bull
+819,2009,yas_marina,Yas Marina Circuit,,7,Sebastian Vettel,Red Bull
+820,2010,bahrain,Bahrain International Circuit,,6,Fernando Alonso,Ferrari
+821,2010,albert_park,Albert Park Grand Prix Circuit,,14,Jenson Button,McLaren
+822,2010,sepang,Sepang International Circuit,,7,Sebastian Vettel,Red Bull
+823,2010,shanghai,Shanghai International Circuit,,13,Jenson Button,McLaren
+824,2010,catalunya,Circuit de Barcelona-Catalunya,,5,Mark Webber,Red Bull
+825,2010,monaco,Circuit de Monaco,,2,Mark Webber,Red Bull
+826,2010,istanbul,Istanbul Park,,7,Lewis Hamilton,McLaren
+827,2010,villeneuve,Circuit Gilles Villeneuve,,6,Lewis Hamilton,McLaren
+828,2010,valencia,Valencia Street Circuit,,11,Sebastian Vettel,Red Bull
+829,2010,silverstone,Silverstone Circuit,,18,Mark Webber,Red Bull
+830,2010,hockenheimring,Hockenheimring,,6,Fernando Alonso,Ferrari
+831,2010,hungaroring,Hungaroring,,6,Mark Webber,Red Bull
+832,2010,spa,Circuit de Spa-Francorchamps,,7,Lewis Hamilton,McLaren
+833,2010,monza,Autodromo Nazionale di Monza,,4,Fernando Alonso,Ferrari
+834,2010,marina_bay,Marina Bay Street Circuit,,4,Fernando Alonso,Ferrari
+835,2010,suzuka,Suzuka Circuit,,5,Sebastian Vettel,Red Bull
+836,2010,yeongam,Korean International Circuit,,15,Fernando Alonso,Ferrari
+837,2010,interlagos,Autódromo José Carlos Pace,,10,Sebastian Vettel,Red Bull
+838,2010,yas_marina,Yas Marina Circuit,,12,Sebastian Vettel,Red Bull
+839,2011,albert_park,Albert Park Grand Prix Circuit,,6,Sebastian Vettel,Red Bull
+840,2011,sepang,Sepang International Circuit,,8,Sebastian Vettel,Red Bull
+841,2011,shanghai,Shanghai International Circuit,,21,Lewis Hamilton,McLaren
+842,2011,istanbul,Istanbul Park,,4,Sebastian Vettel,Red Bull
+843,2011,catalunya,Circuit de Barcelona-Catalunya,,8,Sebastian Vettel,Red Bull
+844,2011,monaco,Circuit de Monaco,,11,Sebastian Vettel,Red Bull
+845,2011,villeneuve,Circuit Gilles Villeneuve,,17,Jenson Button,McLaren
+846,2011,valencia,Valencia Street Circuit,,4,Sebastian Vettel,Red Bull
+847,2011,silverstone,Silverstone Circuit,,11,Fernando Alonso,Ferrari
+848,2011,nurburgring,Nürburgring,,6,Lewis Hamilton,McLaren
+849,2011,hungaroring,Hungaroring,,8,Jenson Button,McLaren
+850,2011,spa,Circuit de Spa-Francorchamps,,34,Sebastian Vettel,Red Bull
+851,2011,monza,Autodromo Nazionale di Monza,,7,Sebastian Vettel,Red Bull
+852,2011,marina_bay,Marina Bay Street Circuit,,4,Sebastian Vettel,Red Bull
+853,2011,suzuka,Suzuka Circuit,,10,Jenson Button,McLaren
+854,2011,yeongam,Korean International Circuit,,5,Sebastian Vettel,Red Bull
+855,2011,buddh,Buddh International Circuit,,10,Sebastian Vettel,Red Bull
+856,2011,yas_marina,Yas Marina Circuit,,5,Lewis Hamilton,McLaren
+857,2011,interlagos,Autódromo José Carlos Pace,,5,Mark Webber,Red Bull
+858,2012,albert_park,Albert Park Grand Prix Circuit,,15,Jenson Button,McLaren
+859,2012,sepang,Sepang International Circuit,,21,Fernando Alonso,Ferrari
+860,2012,shanghai,Shanghai International Circuit,,15,Nico Rosberg,Mercedes
+861,2012,bahrain,Bahrain International Circuit,,14,Sebastian Vettel,Red Bull
+862,2012,catalunya,Circuit de Barcelona-Catalunya,,6,Pastor Maldonado,Williams
+863,2012,monaco,Circuit de Monaco,,9,Mark Webber,Red Bull
+864,2012,villeneuve,Circuit Gilles Villeneuve,,23,Lewis Hamilton,McLaren
+865,2012,valencia,Valencia Street Circuit,,40,Fernando Alonso,Ferrari
+866,2012,silverstone,Silverstone Circuit,,5,Mark Webber,Red Bull
+867,2012,hockenheimring,Hockenheimring,,22,Fernando Alonso,Ferrari
+868,2012,hungaroring,Hungaroring,,6,Lewis Hamilton,McLaren
+869,2012,spa,Circuit de Spa-Francorchamps,,24,Jenson Button,McLaren
+870,2012,monza,Autodromo Nazionale di Monza,,20,Lewis Hamilton,McLaren
+871,2012,marina_bay,Marina Bay Street Circuit,,13,Sebastian Vettel,Red Bull
+872,2012,suzuka,Suzuka Circuit,,16,Sebastian Vettel,Red Bull
+873,2012,yeongam,Korean International Circuit,,5,Sebastian Vettel,Red Bull
+874,2012,buddh,Buddh International Circuit,,6,Sebastian Vettel,Red Bull
+875,2012,yas_marina,Yas Marina Circuit,,31,Kimi Räikkönen,Lotus F1
+876,2012,americas,Circuit of the Americas,,20,Lewis Hamilton,McLaren
+877,2012,interlagos,Autódromo José Carlos Pace,,10,Jenson Button,McLaren
+878,2013,albert_park,Albert Park Grand Prix Circuit,,13,Kimi Räikkönen,Lotus F1
+879,2013,sepang,Sepang International Circuit,,9,Sebastian Vettel,Red Bull
+880,2013,shanghai,Shanghai International Circuit,,12,Fernando Alonso,Ferrari
+881,2013,bahrain,Bahrain International Circuit,,20,Sebastian Vettel,Red Bull
+882,2013,catalunya,Circuit de Barcelona-Catalunya,,15,Fernando Alonso,Ferrari
+883,2013,monaco,Circuit de Monaco,,7,Nico Rosberg,Mercedes
+884,2013,villeneuve,Circuit Gilles Villeneuve,,7,Sebastian Vettel,Red Bull
+885,2013,silverstone,Silverstone Circuit,,15,Nico Rosberg,Mercedes
+886,2013,nurburgring,Nürburgring,,13,Sebastian Vettel,Red Bull
+887,2013,hungaroring,Hungaroring,,11,Lewis Hamilton,Mercedes
+888,2013,spa,Circuit de Spa-Francorchamps,,12,Sebastian Vettel,Red Bull
+889,2013,monza,Autodromo Nazionale di Monza,,6,Sebastian Vettel,Red Bull
+890,2013,marina_bay,Marina Bay Street Circuit,,17,Sebastian Vettel,Red Bull
+891,2013,yeongam,Korean International Circuit,,13,Sebastian Vettel,Red Bull
+892,2013,suzuka,Suzuka Circuit,,11,Sebastian Vettel,Red Bull
+893,2013,buddh,Buddh International Circuit,,19,Sebastian Vettel,Red Bull
+894,2013,yas_marina,Yas Marina Circuit,,9,Sebastian Vettel,Red Bull
+895,2013,americas,Circuit of the Americas,,4,Sebastian Vettel,Red Bull
+896,2013,interlagos,Autódromo José Carlos Pace,,15,Sebastian Vettel,Red Bull
+897,2014,albert_park,Albert Park Grand Prix Circuit,,22,Nico Rosberg,Mercedes
+898,2014,sepang,Sepang International Circuit,,4,Lewis Hamilton,Mercedes
+899,2014,bahrain,Bahrain International Circuit,,18,Lewis Hamilton,Mercedes
+900,2014,shanghai,Shanghai International Circuit,,8,Lewis Hamilton,Mercedes
+901,2014,catalunya,Circuit de Barcelona-Catalunya,,12,Lewis Hamilton,Mercedes
+902,2014,monaco,Circuit de Monaco,,7,Nico Rosberg,Mercedes
+903,2014,villeneuve,Circuit Gilles Villeneuve,,17,Daniel Ricciardo,Red Bull
+904,2014,red_bull_ring,Red Bull Ring,,14,Nico Rosberg,Mercedes
+905,2014,silverstone,Silverstone Circuit,,26,Lewis Hamilton,Mercedes
+906,2014,hockenheimring,Hockenheimring,,21,Nico Rosberg,Mercedes
+907,2014,hungaroring,Hungaroring,,29,Daniel Ricciardo,Red Bull
+908,2014,spa,Circuit de Spa-Francorchamps,,14,Daniel Ricciardo,Red Bull
+909,2014,monza,Autodromo Nazionale di Monza,,6,Lewis Hamilton,Mercedes
+910,2014,marina_bay,Marina Bay Street Circuit,,4,Lewis Hamilton,Mercedes
+911,2014,suzuka,Suzuka Circuit,,13,Lewis Hamilton,Mercedes
+912,2014,sochi,Sochi Autodrom,,6,Lewis Hamilton,Mercedes
+913,2014,americas,Circuit of the Americas,,6,Lewis Hamilton,Mercedes
+914,2014,interlagos,Autódromo José Carlos Pace,,2,Nico Rosberg,Mercedes
+915,2014,yas_marina,Yas Marina Circuit,,20,Lewis Hamilton,Mercedes
+916,2015,albert_park,Albert Park Grand Prix Circuit,,7,Lewis Hamilton,Mercedes
+917,2015,sepang,Sepang International Circuit,,12,Sebastian Vettel,Ferrari
+918,2015,shanghai,Shanghai International Circuit,,3,Lewis Hamilton,Mercedes
+919,2015,bahrain,Bahrain International Circuit,,6,Lewis Hamilton,Mercedes
+920,2015,catalunya,Circuit de Barcelona-Catalunya,,2,Nico Rosberg,Mercedes
+921,2015,monaco,Circuit de Monaco,,6,Nico Rosberg,Mercedes
+922,2015,villeneuve,Circuit Gilles Villeneuve,,15,Lewis Hamilton,Mercedes
+923,2015,red_bull_ring,Red Bull Ring,,5,Nico Rosberg,Mercedes
+924,2015,silverstone,Silverstone Circuit,,5,Lewis Hamilton,Mercedes
+925,2015,hungaroring,Hungaroring,,23,Sebastian Vettel,Ferrari
+926,2015,spa,Circuit de Spa-Francorchamps,,15,Lewis Hamilton,Mercedes
+927,2015,monza,Autodromo Nazionale di Monza,,8,Lewis Hamilton,Mercedes
+928,2015,marina_bay,Marina Bay Street Circuit,,4,Sebastian Vettel,Ferrari
+929,2015,suzuka,Suzuka Circuit,,7,Lewis Hamilton,Mercedes
+930,2015,sochi,Sochi Autodrom,,24,Lewis Hamilton,Mercedes
+931,2015,americas,Circuit of the Americas,,16,Lewis Hamilton,Mercedes
+932,2015,rodriguez,Autódromo Hermanos Rodríguez,,3,Nico Rosberg,Mercedes
+933,2015,interlagos,Autódromo José Carlos Pace,,2,Nico Rosberg,Mercedes
+934,2015,yas_marina,Yas Marina Circuit,,12,Nico Rosberg,Mercedes
+935,2016,albert_park,Albert Park Grand Prix Circuit,,7,Nico Rosberg,Mercedes
+936,2016,bahrain,Bahrain International Circuit,,10,Nico Rosberg,Mercedes
+937,2016,shanghai,Shanghai International Circuit,,9,Nico Rosberg,Mercedes
+938,2016,sochi,Sochi Autodrom,,11,Nico Rosberg,Mercedes
+939,2016,catalunya,Circuit de Barcelona-Catalunya,,12,Max Verstappen,Red Bull
+940,2016,monaco,Circuit de Monaco,,11,Lewis Hamilton,Mercedes
+941,2016,villeneuve,Circuit Gilles Villeneuve,,9,Lewis Hamilton,Mercedes
+942,2016,baku,Baku City Circuit,,10,Nico Rosberg,Mercedes
+943,2016,red_bull_ring,Red Bull Ring,,9,Lewis Hamilton,Mercedes
+944,2016,silverstone,Silverstone Circuit,,2,Lewis Hamilton,Mercedes
+945,2016,hungaroring,Hungaroring,,4,Lewis Hamilton,Mercedes
+946,2016,hockenheimring,Hockenheimring,,7,Lewis Hamilton,Mercedes
+947,2016,spa,Circuit de Spa-Francorchamps,,25,Nico Rosberg,Mercedes
+948,2016,monza,Autodromo Nazionale di Monza,,3,Nico Rosberg,Mercedes
+949,2016,marina_bay,Marina Bay Street Circuit,,18,Nico Rosberg,Mercedes
+950,2016,sepang,Sepang International Circuit,,13,Daniel Ricciardo,Red Bull
+951,2016,suzuka,Suzuka Circuit,,7,Nico Rosberg,Mercedes
+952,2016,americas,Circuit of the Americas,,9,Lewis Hamilton,Mercedes
+953,2016,rodriguez,Autódromo Hermanos Rodríguez,,4,Lewis Hamilton,Mercedes
+954,2016,interlagos,Autódromo José Carlos Pace,,6,Lewis Hamilton,Mercedes
+955,2016,yas_marina,Yas Marina Circuit,,6,Lewis Hamilton,Mercedes
+956,2017,albert_park,Albert Park Grand Prix Circuit,,2,Sebastian Vettel,Ferrari
+957,2017,shanghai,Shanghai International Circuit,,15,Lewis Hamilton,Mercedes
+958,2017,bahrain,Bahrain International Circuit,,6,Sebastian Vettel,Ferrari
+959,2017,sochi,Sochi Autodrom,,6,Valtteri Bottas,Mercedes
+960,2017,catalunya,Circuit de Barcelona-Catalunya,,12,Lewis Hamilton,Mercedes
+961,2017,monaco,Circuit de Monaco,,6,Sebastian Vettel,Ferrari
+962,2017,villeneuve,Circuit Gilles Villeneuve,,9,Lewis Hamilton,Mercedes
+963,2017,baku,Baku City Circuit,,18,Daniel Ricciardo,Red Bull
+964,2017,red_bull_ring,Red Bull Ring,,7,Valtteri Bottas,Mercedes
+965,2017,silverstone,Silverstone Circuit,,22,Lewis Hamilton,Mercedes
+966,2017,hungaroring,Hungaroring,,0,Sebastian Vettel,Ferrari
+967,2017,spa,Circuit de Spa-Francorchamps,,5,Lewis Hamilton,Mercedes
+968,2017,monza,Autodromo Nazionale di Monza,,17,Lewis Hamilton,Mercedes
+969,2017,marina_bay,Marina Bay Street Circuit,,21,Lewis Hamilton,Mercedes
+970,2017,sepang,Sepang International Circuit,,20,Max Verstappen,Red Bull
+971,2017,suzuka,Suzuka Circuit,,9,Lewis Hamilton,Mercedes
+972,2017,americas,Circuit of the Americas,,16,Lewis Hamilton,Mercedes
+973,2017,rodriguez,Autódromo Hermanos Rodríguez,,9,Max Verstappen,Red Bull
+974,2017,interlagos,Autódromo José Carlos Pace,,19,Sebastian Vettel,Ferrari
+975,2017,yas_marina,Yas Marina Circuit,,2,Valtteri Bottas,Mercedes
+976,2018,albert_park,Albert Park Grand Prix Circuit,,13,Sebastian Vettel,Ferrari
+977,2018,bahrain,Bahrain International Circuit,,9,Sebastian Vettel,Ferrari
+978,2018,shanghai,Shanghai International Circuit,,7,Daniel Ricciardo,Red Bull
+979,2018,baku,Baku City Circuit,,17,Lewis Hamilton,Mercedes
+980,2018,catalunya,Circuit de Barcelona-Catalunya,,4,Lewis Hamilton,Mercedes
+981,2018,monaco,Circuit de Monaco,,0,Daniel Ricciardo,Red Bull
+982,2018,villeneuve,Circuit Gilles Villeneuve,,3,Sebastian Vettel,Ferrari
+983,2018,ricard,Circuit Paul Ricard,,8,Lewis Hamilton,Mercedes
+984,2018,red_bull_ring,Red Bull Ring,,11,Max Verstappen,Red Bull
+985,2018,silverstone,Silverstone Circuit,,3,Sebastian Vettel,Ferrari
+986,2018,hockenheimring,Hockenheimring,,15,Lewis Hamilton,Mercedes
+987,2018,hungaroring,Hungaroring,,13,Lewis Hamilton,Mercedes
+988,2018,spa,Circuit de Spa-Francorchamps,,22,Sebastian Vettel,Ferrari
+989,2018,monza,Autodromo Nazionale di Monza,,6,Lewis Hamilton,Mercedes
+990,2018,marina_bay,Marina Bay Street Circuit,,0,Lewis Hamilton,Mercedes
+991,2018,sochi,Sochi Autodrom,,16,Lewis Hamilton,Mercedes
+992,2018,suzuka,Suzuka Circuit,,12,Lewis Hamilton,Mercedes
+993,2018,americas,Circuit of the Americas,,22,Kimi Räikkönen,Ferrari
+994,2018,rodriguez,Autódromo Hermanos Rodríguez,,7,Max Verstappen,Red Bull
+995,2018,interlagos,Autódromo José Carlos Pace,,13,Lewis Hamilton,Mercedes
+996,2018,yas_marina,Yas Marina Circuit,,8,Lewis Hamilton,Mercedes
+997,2019,albert_park,Albert Park Grand Prix Circuit,,4,Valtteri Bottas,Mercedes
+998,2019,bahrain,Bahrain International Circuit,,10,Lewis Hamilton,Mercedes
+999,2019,shanghai,Shanghai International Circuit,,4,Lewis Hamilton,Mercedes
+1000,2019,baku,Baku City Circuit,,3,Valtteri Bottas,Mercedes
+1001,2019,catalunya,Circuit de Barcelona-Catalunya,,4,Lewis Hamilton,Mercedes
+1002,2019,monaco,Circuit de Monaco,,7,Lewis Hamilton,Mercedes
+1003,2019,villeneuve,Circuit Gilles Villeneuve,,8,Lewis Hamilton,Mercedes
+1004,2019,ricard,Circuit Paul Ricard,,2,Lewis Hamilton,Mercedes
+1005,2019,red_bull_ring,Red Bull Ring,,8,Max Verstappen,Red Bull
+1006,2019,silverstone,Silverstone Circuit,,4,Lewis Hamilton,Mercedes
+1007,2019,hockenheimring,Hockenheimring,,43,Max Verstappen,Red Bull
+1008,2019,hungaroring,Hungaroring,,8,Lewis Hamilton,Mercedes
+1009,2019,spa,Circuit de Spa-Francorchamps,,16,Charles Leclerc,Ferrari
+1010,2019,monza,Autodromo Nazionale di Monza,,4,Charles Leclerc,Ferrari
+1011,2019,marina_bay,Marina Bay Street Circuit,,6,Sebastian Vettel,Ferrari
+1012,2019,sochi,Sochi Autodrom,,15,Lewis Hamilton,Mercedes
+1013,2019,suzuka,Suzuka Circuit,,8,Valtteri Bottas,Mercedes
+1014,2019,rodriguez,Autódromo Hermanos Rodríguez,,8,Lewis Hamilton,Mercedes
+1015,2019,americas,Circuit of the Americas,,4,Valtteri Bottas,Mercedes
+1016,2019,interlagos,Autódromo José Carlos Pace,,32,Max Verstappen,Red Bull
+1017,2019,yas_marina,Yas Marina Circuit,,17,Lewis Hamilton,Mercedes
+1018,2020,red_bull_ring,Red Bull Ring,,9,Valtteri Bottas,Mercedes
+1019,2020,red_bull_ring,Red Bull Ring,,9,Lewis Hamilton,Mercedes
+1020,2020,hungaroring,Hungaroring,,15,Lewis Hamilton,Mercedes
+1021,2020,silverstone,Silverstone Circuit,,6,Lewis Hamilton,Mercedes
+1022,2020,silverstone,Silverstone Circuit,,13,Max Verstappen,Red Bull
+1023,2020,catalunya,Circuit de Barcelona-Catalunya,,4,Lewis Hamilton,Mercedes
+1024,2020,spa,Circuit de Spa-Francorchamps,,1,Lewis Hamilton,Mercedes
+1025,2020,monza,Autodromo Nazionale di Monza,,20,Pierre Gasly,AlphaTauri
+1026,2020,mugello,Autodromo Internazionale del Mugello,,7,Lewis Hamilton,Mercedes
+1027,2020,sochi,Sochi Autodrom,,4,Valtteri Bottas,Mercedes
+1028,2020,nurburgring,Nürburgring,,15,Lewis Hamilton,Mercedes
+1029,2020,portimao,Autódromo Internacional do Algarve,,4,Lewis Hamilton,Mercedes
+1030,2020,imola,Autodromo Enzo e Dino Ferrari,,10,Lewis Hamilton,Mercedes
+1031,2020,istanbul,Istanbul Park,,32,Lewis Hamilton,Mercedes
+1032,2020,bahrain,Bahrain International Circuit,,17,Lewis Hamilton,Mercedes
+1033,2020,bahrain,Bahrain International Circuit,,26,Sergio Pérez,Racing Point
+1034,2020,yas_marina,Yas Marina Circuit,,2,Max Verstappen,Red Bull
+1035,2021,bahrain,Bahrain International Circuit,,10,Lewis Hamilton,Mercedes
+1036,2021,imola,Autodromo Enzo e Dino Ferrari,,13,Max Verstappen,Red Bull
+1037,2021,portimao,Autódromo Internacional do Algarve,,6,Lewis Hamilton,Mercedes
+1038,2021,catalunya,Circuit de Barcelona-Catalunya,,3,Lewis Hamilton,Mercedes
+1039,2021,monaco,Circuit de Monaco,,13,Max Verstappen,Red Bull
+1040,2021,baku,Baku City Circuit,,22,Sergio Pérez,Red Bull
+1041,2021,ricard,Circuit Paul Ricard,,5,Max Verstappen,Red Bull
+1042,2021,red_bull_ring,Red Bull Ring,,4,Max Verstappen,Red Bull
+1043,2021,red_bull_ring,Red Bull Ring,,9,Max Verstappen,Red Bull
+1044,2021,silverstone,Silverstone Circuit,,5,Lewis Hamilton,Mercedes
+1045,2021,hungaroring,Hungaroring,,25,Esteban Ocon,Alpine F1 Team
+1046,2021,spa,Circuit de Spa-Francorchamps,1.8697500000000002,0,Max Verstappen,Red Bull
+1047,2021,zandvoort,Circuit Park Zandvoort,,0,Max Verstappen,Red Bull
+1048,2021,monza,Autodromo Nazionale di Monza,,22,Daniel Ricciardo,McLaren
+1049,2021,sochi,Sochi Autodrom,,34,Lewis Hamilton,Mercedes
+1050,2021,istanbul,Istanbul Park,,10,Valtteri Bottas,Mercedes
+1051,2021,americas,Circuit of the Americas,,1,Max Verstappen,Red Bull
+1052,2021,rodriguez,Autódromo Hermanos Rodríguez,,7,Max Verstappen,Red Bull
+1053,2021,interlagos,Autódromo José Carlos Pace,,12,Lewis Hamilton,Mercedes
+1054,2021,losail,Losail International Circuit,,16,Lewis Hamilton,Mercedes
+1055,2021,jeddah,Jeddah Corniche Circuit,,13,Lewis Hamilton,Mercedes
+1056,2021,yas_marina,Yas Marina Circuit,,13,Max Verstappen,Red Bull
+1057,2022,bahrain,Bahrain International Circuit,,10,Charles Leclerc,Ferrari
+1058,2022,jeddah,Jeddah Corniche Circuit,,7,Max Verstappen,Red Bull
+1059,2022,albert_park,Albert Park Grand Prix Circuit,,6,Charles Leclerc,Ferrari
+1060,2022,imola,Autodromo Enzo e Dino Ferrari,,12,Max Verstappen,Red Bull
+1061,2022,miami,Miami International Autodrome,,11,Max Verstappen,Red Bull
+1062,2022,catalunya,Circuit de Barcelona-Catalunya,,7,Max Verstappen,Red Bull
+1063,2022,monaco,Circuit de Monaco,,7,Sergio Pérez,Red Bull
+1064,2022,baku,Baku City Circuit,,8,Max Verstappen,Red Bull
+1065,2022,villeneuve,Circuit Gilles Villeneuve,,20,Max Verstappen,Red Bull
+1066,2022,silverstone,Silverstone Circuit,,7,Carlos Sainz,Ferrari
+1067,2022,red_bull_ring,Red Bull Ring,,8,Charles Leclerc,Ferrari
+1068,2022,ricard,Circuit Paul Ricard,,21,Max Verstappen,Red Bull
+1069,2022,hungaroring,Hungaroring,,24,Max Verstappen,Red Bull
+1070,2022,spa,Circuit de Spa-Francorchamps,,18,Max Verstappen,Red Bull
+1071,2022,zandvoort,Circuit Park Zandvoort,,5,Max Verstappen,Red Bull
+1072,2022,monza,Autodromo Nazionale di Monza,,36,Max Verstappen,Red Bull
+1073,2022,marina_bay,Marina Bay Street Circuit,,16,Sergio Pérez,Red Bull
+1074,2022,suzuka,Suzuka Circuit,,5,Max Verstappen,Red Bull
+1075,2022,americas,Circuit of the Americas,,17,Max Verstappen,Red Bull
+1076,2022,rodriguez,Autódromo Hermanos Rodríguez,,4,Max Verstappen,Red Bull
+1077,2022,interlagos,Autódromo José Carlos Pace,,17,George Russell,Mercedes
+1078,2022,yas_marina,Yas Marina Circuit,,3,Max Verstappen,Red Bull
+1079,2023,bahrain,Bahrain International Circuit,,4,Max Verstappen,Red Bull
+1080,2023,jeddah,Jeddah Corniche Circuit,,17,Sergio Pérez,Red Bull
+1081,2023,albert_park,Albert Park Grand Prix Circuit,,9,Max Verstappen,Red Bull
+1082,2023,baku,Baku City Circuit,,7,Sergio Pérez,Red Bull
+1083,2023,miami,Miami International Autodrome,,14,Max Verstappen,Red Bull
+1084,2023,monaco,Circuit de Monaco,,4,Max Verstappen,Red Bull
+1085,2023,catalunya,Circuit de Barcelona-Catalunya,,21,Max Verstappen,Red Bull
+1086,2023,villeneuve,Circuit Gilles Villeneuve,,12,Max Verstappen,Red Bull
+1087,2023,red_bull_ring,Red Bull Ring,,14,Max Verstappen,Red Bull
+1088,2023,silverstone,Silverstone Circuit,,6,Max Verstappen,Red Bull
+1089,2023,hungaroring,Hungaroring,,12,Max Verstappen,Red Bull
+1090,2023,spa,Circuit de Spa-Francorchamps,,12,Max Verstappen,Red Bull
+1091,2023,zandvoort,Circuit Park Zandvoort,,16,Max Verstappen,Red Bull
+1092,2023,monza,Autodromo Nazionale di Monza,,8,Max Verstappen,Red Bull
+1093,2023,marina_bay,Marina Bay Street Circuit,,11,Carlos Sainz,Ferrari
+1094,2023,suzuka,Suzuka Circuit,,4,Max Verstappen,Red Bull
+1095,2023,losail,Losail International Circuit,,13,Max Verstappen,Red Bull
+1096,2023,americas,Circuit of the Americas,,11,Max Verstappen,Red Bull
+1097,2023,rodriguez,Autódromo Hermanos Rodríguez,,22,Max Verstappen,Red Bull
+1098,2023,interlagos,Autódromo José Carlos Pace,,12,Max Verstappen,Red Bull
+1099,2023,vegas,Las Vegas Strip Street Circuit,,36,Max Verstappen,Red Bull
+1100,2023,yas_marina,Yas Marina Circuit,,6,Max Verstappen,Red Bull
+1101,2024,bahrain,Bahrain International Circuit,,8,Max Verstappen,Red Bull
+1102,2024,jeddah,Jeddah Corniche Circuit,,4,Max Verstappen,Red Bull
+1103,2024,albert_park,Albert Park Grand Prix Circuit,,5,Carlos Sainz,Ferrari
+1104,2024,suzuka,Suzuka Circuit,,7,Max Verstappen,Red Bull
+1105,2024,shanghai,Shanghai International Circuit,,7,Max Verstappen,Red Bull
+1106,2024,miami,Miami International Autodrome,,8,Lando Norris,McLaren
+1107,2024,imola,Autodromo Enzo e Dino Ferrari,,2,Max Verstappen,Red Bull
+1108,2024,monaco,Circuit de Monaco,,0,Charles Leclerc,Ferrari
+1109,2024,villeneuve,Circuit Gilles Villeneuve,,8,Max Verstappen,Red Bull
+1110,2024,catalunya,Circuit de Barcelona-Catalunya,,2,Max Verstappen,Red Bull
+1111,2024,red_bull_ring,Red Bull Ring,,13,George Russell,Mercedes
+1112,2024,silverstone,Silverstone Circuit,,6,Lewis Hamilton,Mercedes
+1113,2024,hungaroring,Hungaroring,,8,Oscar Piastri,McLaren
+1114,2024,spa,Circuit de Spa-Francorchamps,,15,Lewis Hamilton,Mercedes
+1115,2024,zandvoort,Circuit Park Zandvoort,,9,Lando Norris,McLaren
+1116,2024,monza,Autodromo Nazionale di Monza,,7,Charles Leclerc,Ferrari
+1117,2024,baku,Baku City Circuit,,16,Oscar Piastri,McLaren
+1118,2024,marina_bay,Marina Bay Street Circuit,,6,Lando Norris,McLaren
+1119,2024,americas,Circuit of the Americas,,8,Charles Leclerc,Ferrari
+1120,2024,rodriguez,Autódromo Hermanos Rodríguez,,4,Carlos Sainz,Ferrari
+1121,2024,interlagos,Autódromo José Carlos Pace,,31,Max Verstappen,Red Bull
+1122,2024,vegas,Las Vegas Strip Street Circuit,,9,George Russell,Mercedes
+1123,2024,losail,Losail International Circuit,,14,Max Verstappen,Red Bull
+1124,2024,yas_marina,Yas Marina Circuit,,30,Lando Norris,McLaren

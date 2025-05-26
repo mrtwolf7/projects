@@ -6,12 +6,24 @@ def get_position_changes(final_position, grid_position):
     position_change = grid_position-final_position
     return position_change
 
-def convert_to_timedelta_column(times):
-    leader_time = pd.to_timedelta(0) if times[0].startswith('+') else pd.to_timedelta(times[0])
-    td_times = [leader_time]
 
-    for t in times[1:]:
-        if isinstance(t, str) and t.startswith('+'):
+def convert_to_timedelta_column(times):
+    # Try to parse the first valid (non-None) time as the leader's time
+    for t in times:
+        if isinstance(t, str) and not t.startswith('+'):
+            try:
+                leader_time = pd.to_timedelta("0:" + t)
+                break
+            except Exception:
+                continue
+    else:
+        leader_time = pd.NaT  # No valid leader time found
+
+    td_times = []
+    for t in times:
+        if t is None:
+            td_times.append(pd.NaT)
+        elif isinstance(t, str) and t.startswith('+'):
             try:
                 offset = float(t[1:])
                 td_times.append(leader_time + pd.Timedelta(seconds=offset))
@@ -22,7 +34,10 @@ def convert_to_timedelta_column(times):
                 except Exception:
                     td_times.append(pd.NaT)
         else:
-            td_times.append(pd.NaT)
+            try:
+                td_times.append(pd.to_timedelta("0:" + t))
+            except Exception:
+                td_times.append(pd.NaT)
 
     return pd.Series(td_times)
 
