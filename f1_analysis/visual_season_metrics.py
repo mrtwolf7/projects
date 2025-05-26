@@ -67,14 +67,18 @@ def update_graphs(selected_year):
     dff_drivers_standings = df_drivers_standings[df_drivers_standings['year'] == selected_year]
     dff_constructors_standings = df_constructors_standings[df_constructors_standings['year'] == selected_year]
 
-
-    # Pie chart: driver points ratio
+    # Driver points pie chart
     fig_driver_ratio = px.pie(dff_drivers_standings, values='points', names='driver_id', title='Drivers points')
     fig_driver_ratio.update_traces(textposition='outside')
 
-    # Pie chart: constructor points ratio
-    fig_constructor_ratio = px.pie(dff_constructors_standings, values='points', names='constructor_id', title='Constructor points')
-    fig_constructor_ratio.update_traces(textposition='outside')
+    # Constructor points pie chart (handle missing)
+    if not dff_constructors_standings.empty:
+        fig_constructor_ratio = px.pie(dff_constructors_standings, values='points', names='constructor_id', title='Constructor points')
+        fig_constructor_ratio.update_traces(textposition='outside')
+    else:
+        fig_constructor_ratio = px.pie(
+            names=["No data"], values=[1], title="Constructor points"
+        )
 
     # Bar chart: driver wins
     driver_counts = dff['winner'].value_counts().reset_index()
@@ -112,6 +116,7 @@ def update_graphs(selected_year):
         fig_pos_change_ts,
         fig_pos_change_dist
     )
+
 
 
 if __name__ == '__main__':

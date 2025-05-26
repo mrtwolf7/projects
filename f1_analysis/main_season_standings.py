@@ -58,14 +58,26 @@ def create_constructor_standings(year, standings):
 
 
 def main():
-    year = 2024
-    driver_standings = get_driver_standings(year)
-    df_driver_standings = create_driver_standings(year, driver_standings)
-    constructor_standings = get_constructor_standings(year)
-    df_constructor_standings = create_constructor_standings(year, constructor_standings)
+    df_drivers_standings = pd.DataFrame()
+    df_constructors_standings = pd.DataFrame()
 
-    df_driver_standings.to_csv('df_drivers_standings.csv')
-    df_constructor_standings.to_csv('df_constructors_standings.csv')
+    years = get_available_seasons()
+
+    for year in years:
+        print(year)
+        driver_standings = get_driver_standings(year)
+        df_driver_standings = create_driver_standings(year, driver_standings)
+        df_drivers_standings = pd.concat([df_drivers_standings, df_driver_standings], ignore_index=True)
+
+        constructor_standings = get_constructor_standings(year)      
+        if constructor_standings:
+            df_constructor_standings = create_constructor_standings(year, constructor_standings)
+            df_constructors_standings = pd.concat([df_constructors_standings, df_constructor_standings], ignore_index=True)
+        else:
+            print(f"Constructor standings not available for {year}, skipping.")
+
+    df_drivers_standings.to_csv('df_drivers_standings.csv')
+    df_constructors_standings.to_csv('df_constructors_standings.csv')
 
 if __name__ == "__main__":
     main()
