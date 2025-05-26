@@ -8,16 +8,22 @@ def get_position_changes(final_position, grid_position):
 
 
 def convert_to_timedelta_column(times):
-    # Try to parse the first valid (non-None) time as the leader's time
+    # Find first valid leader time (non-relative, non-None)
+    leader_time = None
     for t in times:
         if isinstance(t, str) and not t.startswith('+'):
             try:
-                leader_time = pd.to_timedelta("0:" + t)
+                leader_time = pd.to_timedelta(t)
                 break
             except Exception:
-                continue
+                try:
+                    # Try to parse as mm:ss.S (add hours prefix if missing)
+                    leader_time = pd.to_timedelta("00:" + t)
+                    break
+                except Exception:
+                    continue
     else:
-        leader_time = pd.NaT  # No valid leader time found
+        leader_time = pd.NaT
 
     td_times = []
     for t in times:
@@ -27,19 +33,23 @@ def convert_to_timedelta_column(times):
             try:
                 offset = float(t[1:])
                 td_times.append(leader_time + pd.Timedelta(seconds=offset))
-            except ValueError:
+            except Exception:
                 try:
-                    offset = pd.to_timedelta("0:" + t[1:])
+                    offset = pd.to_timedelta("00:" + t[1:])
                     td_times.append(leader_time + offset)
                 except Exception:
                     td_times.append(pd.NaT)
         else:
             try:
-                td_times.append(pd.to_timedelta("0:" + t))
+                td_times.append(pd.to_timedelta(t))
             except Exception:
-                td_times.append(pd.NaT)
+                try:
+                    td_times.append(pd.to_timedelta("00:" + t))
+                except Exception:
+                    td_times.append(pd.NaT)
 
     return pd.Series(td_times)
+
 
 
 def get_position_interval(time_series):
