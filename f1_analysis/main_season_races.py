@@ -14,9 +14,6 @@ from metrics.race_metrics import (
 import pandas as pd
 from collections import Counter
 
-year = 2024
-seasons = get_available_seasons()
-
 
 def create_race_df(results):
     df = pd.DataFrame([{
@@ -74,30 +71,36 @@ def create_season_metrics_df(year, df_races_metrics):
 
 
 def main():
-    races = get_season_races(year)
-    print(f"Found {len(races)} races in {year}")
-
-    race_gaps = []
-    position_changes = []
-    winner_drivers = []
-    winner_constructors = []
-
+    
     df_races_metrics = pd.DataFrame()
+    df_seasons_metrics = pd.DataFrame()
 
-    for race in races:
-        track_id = race['Circuit']['circuitId']
-        track_name = race['Circuit']['circuitName']
+    years = get_available_seasons()
 
-        results = get_race_results(year, race['round'])
-        df_race = create_race_df(results)
-        df_race_metrics = create_race_metrics_df(df_race, year, track_id, track_name)    
-        df_races_metrics = pd.concat([df_races_metrics, df_race_metrics], ignore_index=True)
+    for year in years:
 
-    print(df_races_metrics)
+        races = get_season_races(year)
+        print(f"Found {len(races)} races in {year}")
+
+        race_gaps = []
+        position_changes = []
+        winner_drivers = []
+        winner_constructors = []
+
+        for race in races:
+            track_id = race['Circuit']['circuitId']
+            track_name = race['Circuit']['circuitName']
+
+            results = get_race_results(year, race['round'])
+            df_race = create_race_df(results)
+            df_race_metrics = create_race_metrics_df(df_race, year, track_id, track_name)    
+            df_races_metrics = pd.concat([df_races_metrics, df_race_metrics], ignore_index=True)
+        
+        df_season_metrics = create_season_metrics_df(year, df_races_metrics)
+        df_seasons_metrics = pd.concat([df_seasons_metrics, df_season_metrics], ignore_index=True)
+
     df_races_metrics.to_csv('df_races_metrics.csv')
-
-    df_season_metrics = create_season_metrics_df(year, df_races_metrics)
-    print(df_season_metrics)
+    df_seasons_metrics.to_csv('df_season_metrics.csv')
 
     # TODO diversity of top 5
     # TODO add qualifying winner and constructors
