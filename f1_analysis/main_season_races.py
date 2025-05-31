@@ -38,6 +38,7 @@ def create_race_metrics_df(df_race, year, track_id, track_name):
     pos_changes = df_race['position_change'].abs().sum()
     win_driver = df_race['driver'][0]
     win_constructor = df_race['constructor'][0]
+    grid_position = df_race['grid'][0]
 
     df_race_metrics = pd.DataFrame([{
         'year': year,
@@ -46,7 +47,8 @@ def create_race_metrics_df(df_race, year, track_id, track_name):
         'average_gap': average_gaps,
         'position_change': pos_changes,
         'winner': win_driver,
-        'constructor': win_constructor
+        'constructor': win_constructor,
+        'grid': grid_position,
     }])
 
     return df_race_metrics
@@ -93,7 +95,7 @@ def main():
 
             results = get_race_results(year, race['round'])
             df_race = create_race_df(results)
-            df_race_metrics = create_race_metrics_df(df_race, year, track_id, track_name)    
+            df_race_metrics = create_race_metrics_df(df_race, year, track_id, track_name)
             df_races_metrics = pd.concat([df_races_metrics, df_race_metrics], ignore_index=True)
         
         df_season_metrics = create_season_metrics_df(year, df_races_metrics)
