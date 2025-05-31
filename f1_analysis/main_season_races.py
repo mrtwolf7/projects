@@ -103,17 +103,7 @@ def main():
     df_seasons_metrics.to_csv('df_season_metrics.csv')
 
     # TODO diversity of top 5
-    # TODO add qualifying winner and constructors
-    # TODO % point drivers season
-    # TODO % point constructors season
-    # TODO collect and iterate over seasons
     # TODO create dashboard for season metrics:
-    #      - (season and overall) gini index over time (both)
-    #      - (season) distribution of average gaps
-    #      - (season) distribution of position changes
-    #      - (season) pie chart of points for drivers, constructors
-    #      - (overall) average season gaps over time
-    #      - (overall) average season position changes over time
     #      - (overall) plot bar of % winner and constructor
 
 
