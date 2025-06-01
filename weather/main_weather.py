@@ -37,5 +37,12 @@ def main():
     df.to_csv('weather.csv')
     df.head(20)
 
+    # TODO:
+    # for every city:
+    # - count of rainy easter mondays (bins)
+    # - barchart of mm rain vs year: easter mondays vs average other days (two bars)
+    # - timeseries of rain mm vs month: eater mondays vs other days
+    # 
+
 if __name__ == "__main__":
     main()
