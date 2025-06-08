@@ -17,31 +17,44 @@ def get_easter_week(year):
 
 def main():
     records = []
+    cities_df = pd.read_csv("cities.csv")
 
-    for year in range(1995, 2025):
+    for _, row in cities_df.iterrows():
+        city_name = row['city']
+        location = Point(row['latitude'], row['longitude'], row['elevation'])
 
-        start_date, end_date, em = get_easter_week(year)
-        data = Daily(rome, start_date, end_date).fetch()
+        for year in range(1995, 2025):
 
-        for day, row in data.iterrows():
-            records.append({
-                "city": "Rome",
-                "year": year,
-                "day": day.date(),
-                "easter_monday": (day.date() == em),
-                "rain_mm": row['prcp'] if not pd.isna(row['prcp']) else 0,
-                "temperature_c": row['tavg'] if not pd.isna(row['tavg']) else None
-            })
+            start_date, end_date, em = get_easter_week(year)
+            try:
+                data = Daily(location, start_date, end_date).fetch()
+            except Exception as e:
+                print(f"Error fetching data for {city_name}, {year}: {e}")
+                continue
+
+            for day, row in data.iterrows():
+                records.append({
+                    "city": city_name,
+                    "year": year,
+                    "day": day.date(),
+                    "easter_monday": (day.date() == em),
+                    "rain_mm": row['prcp'] if not pd.isna(row['prcp']) else 0,
+                    "temperature_c": row['tavg'] if not pd.isna(row['tavg']) else None
+                })
 
     df = pd.DataFrame(records)
     df.to_csv('weather.csv')
-    df.head(20)
 
     # TODO:
-    # for every city:
-    # - count of rainy easter mondays (bins)
-    # - barchart of mm rain vs year: easter mondays vs average other days (two bars)
-    # - timeseries of rain mm vs month: eater mondays vs other days
+    # (overall):
+    # - cities with most rainy easter mondays (count)
+    # - average temp in cities
+    # - easter mondays vs normal days:
+    #    - cities with most rainy days compared to normal days (count)
+    #    - cities with colder/hotter easter mondays than normal days
+    #    - average diff in rain between easter mondays and normal
+    #    - average diff in temp between easter mondays and mormal
+    # 
     # 
 
 if __name__ == "__main__":
