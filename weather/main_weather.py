@@ -46,10 +46,15 @@ def main():
     df.to_csv('weather.csv')
 
     # TODO:
-    # for every city:
-    # - count of rainy easter mondays (bins)
-    # - barchart of mm rain vs year: easter mondays vs average other days (two bars)
-    # - timeseries of rain mm vs month: eater mondays vs other days
+    # (overall):
+    # - cities with most rainy easter mondays (count)
+    # - average temp in cities
+    # - easter mondays vs normal days:
+    #    - cities with most rainy days compared to normal days (count)
+    #    - cities with colder/hotter easter mondays than normal days
+    #    - average diff in rain between easter mondays and normal
+    #    - average diff in temp between easter mondays and mormal
+    # 
     # 
 
 if __name__ == "__main__":
