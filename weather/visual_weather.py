@@ -31,6 +31,7 @@ app.layout = html.Div([
     dbc.Row([
         dbc.Col(dcc.Graph(id='rainy-years'), width=12),
         dbc.Col(dcc.Graph(id='rainy-months'), width=12),
+        dbc.Col(dcc.Graph(id='temp-months'), width=12)
     ])
 ])
 
@@ -38,6 +39,7 @@ app.layout = html.Div([
 @app.callback(
     Output('rainy-years', 'figure'),
     Output('rainy-months', 'figure'),
+    Output('temp-months', 'figure'),
     Input('city-dropdown', 'value')
 )
 def update_graphs(selected_city):
@@ -50,7 +52,7 @@ def update_graphs(selected_city):
     dff['month_day_str'] = dff['month_day_num'].apply(lambda x: f"{str(x)[:1]}-{str(x)[1:]}")
     dff_grouped_month = (
         dff.groupby(['month_day_num', 'month_day_str', 'easter_monday'], as_index=False)
-        .agg({'rain_mm': 'mean'})
+        .agg({'rain_mm': 'mean', 'temperature_c': 'mean'})
         .sort_values('month_day_num')  # ensures calendar order
     )
     df_line = dff_grouped_month[dff_grouped_month['easter_monday'] == False]
@@ -89,9 +91,37 @@ def update_graphs(selected_city):
         type = 'category'
         )
 
+    # Timeseries: month temperature days
+    fig_temp_month_ts = go.Figure()
+    fig_temp_month_ts.add_trace(go.Scatter(
+        x=df_line['month_day_str'],
+        y=df_line['temperature_c'],
+        mode='lines',
+        name='Avg Temperature (Non-Easter Monday)'
+    ))
+    fig_temp_month_ts.add_trace(go.Scatter(
+        x=df_dots['month_day_str'],
+        y=df_dots['temperature_c'],
+        mode='markers+text',
+        name='Easter Monday',
+        marker=dict(size=10, color='red'),
+        text=df_dots['temperature_c'],
+        textposition='top center'
+    ))
+    fig_temp_month_ts.update_layout(
+        title='Temperature Over Days of the Year',
+        xaxis_title='Day (MM-DD)',
+        yaxis_title='Temperature (C)',
+    )
+    fig_temp_month_ts.update_xaxes(
+        tickangle=45,
+        type = 'category'
+        )
+
     return (
         fig_rain_years,
-        fig_rain_month_ts
+        fig_rain_month_ts,
+        fig_temp_month_ts
     )
 
 
