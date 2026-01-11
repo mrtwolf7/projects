@@ -17,13 +17,27 @@
     tournaments.
   </p>
   <p>
-    THe first angle I looked at was tournament predictability: <strong>are Grand Slam tournaments 
+    The first angle I looked at was tournament predictability: <strong>are Grand Slam tournaments 
     more predictable these days than they were in the past? </strong>
-    To do so, I started by looking at the percentage of matches won by players with the higher 
+    To do so, I started by looking at the ratio of matches won by players with the higher 
     ranking from 1975 to 2024. Higher values represent lower predictability:
   </p>
 
   <Timeline />
+
+  <p>
+    Looking at the plot, you can see that the "favourite players" ratio increases significantly
+    from the 1970s up to 1990s, it continues to increase slower up to 2010s and then it softly decreases.
+    In numbers, while on average in the 70s the ratio was around 0.3 - meaning the 70% of the matches
+    were won by players with lower ranking - it went up to 0.5 in the 80s, up to almost 0.75 in the 10s
+    and then decrease to 0.7 in the 20s.
+  </p>
+  <p>
+    While this is already telling us something about historical trends for all matches in the tournaments
+    I wanted to take a closer look at the tournament predictability by analysing only the matches in the second week
+    (from round of 16 onwards) - come on, let's be honest, these are the games we are more interested in.
+  </p>
+
 </article>
 
 <style>
