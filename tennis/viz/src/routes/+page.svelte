@@ -1,5 +1,6 @@
 <script>
   import Timeline from '$lib/timeline_faves.svelte';
+  import TimelineRounds from '$lib/timeline_faves_round.svelte';
 </script>
 
 <article>
@@ -37,6 +38,7 @@
     I wanted to take a closer look at the tournament predictability by analysing only the matches in the second week
     (from round of 16 onwards) - come on, let's be honest, these are the games we are more interested in.
   </p>
+  <TimelineRounds />
 
 </article>
 
