@@ -1,6 +1,8 @@
 <script>
   import Timeline from '$lib/timeline_faves.svelte';
   import TimelineRounds from '$lib/timeline_faves_round.svelte';
+  import AvgWinnerGames from '$lib/winner_games.svelte';
+  import AvgDiffGames from '$lib/games_diff.svelte';
 </script>
 
 <article>
@@ -50,6 +52,37 @@
     Australian Open in the 00s and US Open in the 10s.
     Roughly speaking this means that <strong> from R16 onwards the player with the highest ranking wins the match 
     around 70% or more of the time </strong>.
+  </p>
+  <p>
+    Ok, the matches are usually won by the player with the higher ranking, but are they interesting? 
+    Are they tight?
+  </p>
+  <p>
+    To answer this question, I have computed what is the average number of games won by the winner for every match.
+    The minimum is 18 (it's the result of a three set match) and every number close to it shows no much competitiveness
+    in the match:
+  </p>
+  <AvgWinnerGames />
+  <p>
+    <strong>The average across the tournaments across the decades is very similar and stable around 21 games </strong>, meaning that
+    it takes on average more than 3 sets for the winner to win the match.
+    Ok, but how tight were this sets? There is quite a big difference if a set is 6-0 or 6-4 and this metric does not 
+    catch it.
+  </p>
+  <p>
+    To find out about it, I have analysed the average games difference:
+  </p>
+  <AvgDiffGames />
+  <p>
+    While there was quite a relevant difference between the tournaments during the 80s,
+    this become very small in the 90s and 00s when all the Grand Slam tournaments were following 
+    a very similar behaviour.
+    The US Open and Wimbledon are the ones showing more stable trends of a decreasing games difference
+    across the decades: this is true for Roland Garros and Australian Open as well, but they show
+    less stable trends.
+    <strong> Overall the games difference is decreasing </strong> for the Grand Slam tournaments, going from more
+    than 7 games difference in the 70s to 6 (or even less) in the 20s: this suggests that <strong> the matches
+    are becoming tighter and tighter. </strong>
   </p>
 </article>
 
