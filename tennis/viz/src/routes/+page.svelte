@@ -36,10 +36,21 @@
   <p>
     While this is already telling us something about historical trends for all matches in the tournaments
     I wanted to take a closer look at the tournament predictability by analysing only the matches in the second week
-    (from round of 16 onwards) - come on, let's be honest, these are the games we are more interested in.
+    (from round of 16 onwards) - come on, let's be honest, these are the games we are more interested in:
   </p>
   <TimelineRounds />
-
+  <p>
+    On average, the favourites ratio is between 0.05-0-1 higher in these tournaments rounds than in the overall tournament,
+    meaning the earliest rounds are where surprising results are more likely to happen.
+  </p>
+  <p>
+    There is not a big difference between the R16, QF, SF and F - values are very similar, between
+    0.68 up to 0.77. There is not any notable difference in the tournaments either: Roland Garros seems to
+    be slightly more unpredictable than the other across the 80s and 90s, then this role is played by the 
+    Australian Open in the 00s and US Open in the 10s.
+    Roughly speaking this means that <strong> from R16 onwards the player with the highest ranking wins the match 
+    around 70% or more of the time </strong>.
+  </p>
 </article>
 
 <style>
