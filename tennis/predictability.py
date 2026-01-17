@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from helpers import get_games_differences, get_games_sums
+from helpers import get_games_differences, get_games_sums, get_winner_games
 
 # --- CONFIG ---
 path = 'input_data/'
@@ -27,6 +27,7 @@ def compute_indicators(df: pd.DataFrame):
     df['sets_count'] = df['score'].str.count('-')
     df['differences'] = df['score'].apply(get_games_differences)
     df['tot_games'] = df['score'].apply(get_games_sums)
+    df['winner_games'] = df['score'].apply(get_winner_games)
 
     avg_sets = df['sets_count'].mean()
     avg_diff_games = df['differences'].mean()
@@ -42,22 +43,29 @@ def get_tournament_metrics(df: pd.DataFrame):
     """Compute overall and per-round metrics for a tournament."""
     round_metrics = {}
 
-    # Overall metrics
-    overall_metrics_keys = ['avg_sets', 'avg_diff_games', 'avg_tot_games', 'avg_rank', 'fave_ratio']
+    overall_metrics_keys = [
+        'avg_sets',
+        'avg_diff_games',
+        'avg_tot_games',
+        'avg_rank',
+        'fave_ratio'
+    ]
+
     overall_values = compute_indicators(df)
     overall_metrics = dict(zip(overall_metrics_keys, overall_values))
 
-    # Round-level metrics
     for rnd in tournament_rounds:
         r_metrics = compute_indicators(df[df['round'] == rnd])
-        round_metrics.update({f'{k}_{rnd}': v for k, v in zip(overall_metrics_keys, r_metrics)})
+        round_metrics.update({
+            f'{k}_{rnd}': v
+            for k, v in zip(overall_metrics_keys, r_metrics)
+        })
 
     return overall_metrics, round_metrics
 
 
 # --- PREDICTABILITY METRICS ---
 def compute_predictability(metrics: dict):
-    """Ranking-based predictability metrics."""
     avg_winner_rank = np.nanmean([
         metrics.get('avg_rank_R16'),
         metrics.get('avg_rank_QF'),
@@ -66,7 +74,8 @@ def compute_predictability(metrics: dict):
     ])
 
     rank_drop = (
-        (metrics.get('avg_rank_F') - metrics.get('avg_rank_R16')) / metrics.get('avg_rank_R16')
+        (metrics.get('avg_rank_F') - metrics.get('avg_rank_R16'))
+        / metrics.get('avg_rank_R16')
         if metrics.get('avg_rank_R16') else np.nan
     )
 
@@ -82,10 +91,9 @@ def compute_predictability(metrics: dict):
 
 # --- COMPETITIVENESS METRICS ---
 def compute_competitiveness(metrics: dict):
-    """Competitiveness metrics, adjusting for tournament level."""
     tourney_level = metrics.get('tourney_level', 'G')
     n_sets = 5 if tourney_level == 'G' else 3
-    max_games = 13 * n_sets  # max games if all sets go to 7–6
+    max_games = 13 * n_sets
 
     match_tightness = np.nanmean([
         metrics.get('avg_tot_games_R16') / max_games,
@@ -106,19 +114,16 @@ def compute_competitiveness(metrics: dict):
 
 # --- AGGREGATE TOURNAMENT SCORE ---
 def get_tournament_scores(metrics: dict):
-    """Compute combined predictability and competitiveness scores."""
     avg_winner_rank, rank_drop, avg_fave_ratio = compute_predictability(metrics)
     match_tightness, match_balance = compute_competitiveness(metrics)
 
-    tournament_scores = {
+    return {
         'avg_winner_rank': avg_winner_rank,
         'rank_drop': rank_drop,
         'avg_fave_ratio': avg_fave_ratio,
         'match_tightness': match_tightness,
         'match_balance': match_balance
     }
-
-    return tournament_scores
 
 
 # --- PROCESS ONE YEAR ---
@@ -133,24 +138,37 @@ def process_year(year: int):
         tourney_level = df_tournament['tourney_level'].iloc[0]
         surface = df_tournament['surface'].iloc[0]
 
+        df_tournament = df_tournament.copy()
+        df_tournament['winner_games'] = df_tournament['score'].apply(get_winner_games)
+
+        avg_winner_games = df_tournament['winner_games'].mean()
+
+        final_match = df_tournament[df_tournament['round'] == 'F']
+        final_winner_rank = (
+            final_match['winner_rank'].iloc[0]
+            if not final_match.empty
+            else np.nan
+        )
+
         overall_metrics, round_metrics = get_tournament_metrics(df_tournament)
-        metrics = {**overall_metrics, **round_metrics}
-        metrics['year'] = year
-        metrics['tournament'] = tourney_name
-        metrics['surface'] = surface
-        metrics['tourney_level'] = tourney_level
+
+        metrics = {
+            **overall_metrics,
+            **round_metrics,
+            'tourney_level': tourney_level
+        }
 
         scores = get_tournament_scores(metrics)
-        metrics.update(scores)
 
-        # Separate outputs
         overall_results.append({
             'year': year,
             'tournament': tourney_name,
             'surface': surface,
             'tourney_level': tourney_level,
             **overall_metrics,
-            **scores
+            **scores,
+            'avg_winner_games': avg_winner_games,
+            'final_winner_rank': final_winner_rank
         })
 
         round_results.append({
@@ -175,23 +193,30 @@ def process_multiple_years(years: list):
         all_overall.append(overall_df)
         all_rounds.append(rounds_df)
 
-    overall_all = pd.concat(all_overall, ignore_index=True)
-    rounds_all = pd.concat(all_rounds, ignore_index=True)
-
-    return overall_all, rounds_all
+    return (
+        pd.concat(all_overall, ignore_index=True),
+        pd.concat(all_rounds, ignore_index=True)
+    )
 
 
 # --- MAIN ---
 def main():
-    years = list(range(1968, 2025))  # <-- adjust range as desired
-    #years = [2024]
+    years = list(range(1968, 2025))
+    # years = [2024]
+
     overall_df, rounds_df = process_multiple_years(years)
 
-    # Save outputs
-    overall_df.to_csv(output_path + 'tournaments_overall_all_years.csv', index=False)
-    rounds_df.to_csv(output_path + 'tournaments_rounds_all_years.csv', index=False)
+    overall_df.to_csv(
+        output_path + 'tournaments_overall_all_years.csv',
+        index=False
+    )
 
-    print(f"\n✅ Saved all results to:")
+    rounds_df.to_csv(
+        output_path + 'tournaments_rounds_all_years.csv',
+        index=False
+    )
+
+    print("\n✅ Saved:")
     print(f"  {output_path}tournaments_overall_all_years.csv")
     print(f"  {output_path}tournaments_rounds_all_years.csv")
 
