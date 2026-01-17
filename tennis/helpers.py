@@ -27,3 +27,21 @@ def get_games_sums(score_string):
             a, b = s_clean.split('-')
             sums.append(int(a) + int(b))
     return sum(sums)
+
+
+def get_winner_games(score: str) -> float:
+    """
+    Compute total games won by the match winner from score string.
+    Example: '6-4 6-4 6-4' -> 18
+    """
+    if not isinstance(score, str):
+        return np.nan
+
+    total = 0
+    for s in score.split():
+        try:
+            w, _ = s.split('-')
+            total += int(w)
+        except ValueError:
+            continue
+    return total
