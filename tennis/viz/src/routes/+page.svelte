@@ -3,20 +3,23 @@
   import TimelineRounds from '$lib/timeline_faves_round.svelte';
   import AvgWinnerGames from '$lib/winner_games.svelte';
   import AvgDiffGames from '$lib/games_diff.svelte';
+  import WinnerRank from '$lib/winner_ranking.svelte';
 </script>
 
 <article>
-  <h1>Is tennis becoming more boring?</h1>
+  <h1>Is tennis becoming more predictable?</h1>
 
   <p>
-    Ok, I hear you out everyone "Hey tennis IS boring! And it has always been!" - well, 
+    Ok, I hear you out everyone "Tennis is sooo boring! And it has always been!" - well, 
     if you never found yourself lost in one of Federer's drop shots, then ok, I agree with you:
     but at that point the problem is not tennis really.
   <p>
   <p>
-    Anyway what I want to answer here is if tennis is becoming MORE boring: to do so I analysed data, 
-    looked at different metrics.
-    I focused on ATP only, tarting by looking at Grand Slams, because arguably the most important
+    I wanted to prove you wrong and show that tennis can also be very entertaining, but in the end
+    this is really personal taste AND showing that a match is entertaining is quite hard to do just by using
+    data, and I would need very granular data - which I do not have.
+    So I decided to answer another question: is tennis becoming more predictable?
+    I focused on ATP only, starting by looking at Grand Slams, because arguably the most important
     tournaments.
   </p>
   <p>
@@ -84,6 +87,39 @@
     than 7 games difference in the 70s to 6 (or even less) in the 20s: this suggests that <strong> the matches
     are becoming tighter and tighter. </strong>
   </p>
+  <p>
+    So, overall, how predictable are the Grand Slam tournaments? How easy is to predict who is going to win the 
+    tournament just by looking at their ranking?
+  </p>
+
+  <WinnerRank />
+
+  <p>
+    Well, we have to admit, it is not that hard to predict, but but but there are some differences among the
+    tournaments.
+  </p>
+  <p>
+    Wimbledon - despite being the most fascinating imo - is also the easiest to predict. <strong> More than 75%
+    of the times the winner is someone from the top 3 </strong>: the other three tournaments go from 68% for the US Open 
+    to 54-56% for Roland Garros and Australian Open.
+    Roland Garros is the one more open to outsiders: 16% of the times the winner's ranking was outisde the top10
+    and 28% of the times the winner was out of the top 5.
+  </p>
+  <p>
+    It is interesting to notice how it seems that #2 have better chances of winning the US Open than #1 and how #4 have never 
+    won Wimbledon from 1975 onwards.
+  </p> 
+  <p>
+    What is the moral of the story? What did we learn?
+    From 1975 to 2024, the men's Grand Slam tournaments have been quite predictable: depending on the tournament
+    <strong> you could guess who the winner is going to be just by looking at the ranking in a good number of cases. </strong>
+    Overall players with a higher ranking have an increasing chance of winning the match, especially from R16 onwards (70% or higher) and 
+    this number is increasing as the years pass. <strong> However, while a player still roughly needs to win 21 games to win the match, 
+    the games difference is decreasing across the years. </strong>
+  </p>
+  <p>
+    We can say that the Grand Slam tournaments are becoming more predictable but the matches are tighter. So, we know who
+    is going to win, but they have to fight a little harder.
 </article>
 
 <style>
