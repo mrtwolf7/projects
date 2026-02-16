@@ -5,10 +5,11 @@ import pandas as pd
 import plotly.express as px
 
 # Load the data
-df = pd.read_csv("df_races_metrics.csv")
+df = pd.read_csv("../df_races_metrics.csv")
 
 # Initialize Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.title = "F1 Tracks Metrics"
 
 # Get list of available tracks
