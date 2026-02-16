@@ -4,7 +4,7 @@ export const projects = [
     slug: "f1-analysis",
     description:
       "What are the most predictable F1 races? Has it change over time? Check this analysis with Dash.",
-    demoUrl: "#",
+    demoUrl: "https://f1-predictability.onrender.com",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/f1_analysis",
     type: "dash",
     stack: ["Dash", "Pandas"]
