@@ -10,6 +10,7 @@ df = pd.read_csv("weather.csv")
 
 # Initialize Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.title = "Easter Mondays weather stats"
 
 # Get list of available cities
