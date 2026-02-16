@@ -14,7 +14,7 @@ export const projects = [
     slug: "weather-analysis",
     description:
       "Does it always rain on Easter Monday in Rome? Is it worse than other italian cities?",
-    demoUrl: "#",
+    demoUrl: "https://weather-it78.onrender.com",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/weather",
     type: "dash",
     stack: ["Dash", "Pandas"]
