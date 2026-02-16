@@ -12,6 +12,7 @@ df_all = pd.read_csv("df_season_metrics.csv")
 
 # Initialize Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.title = "F1 Race Metrics"
 
 # Get list of available years
