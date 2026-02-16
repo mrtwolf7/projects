@@ -1,1 +1,1 @@
-web: gunicorn visual_tracks_metrics:server
+web: gunicorn visual_track_metrics:server
