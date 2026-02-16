@@ -24,7 +24,7 @@ export const projects = [
     slug: "weather-analysis",
     description:
       "Ah, tennis nowadays is so predictable. How true is that?",
-    demoUrl: "#",
+    demoUrl: "https://tennis-predictability.vercel.app/",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/tennis",
     type: "svelte",
     stack: ["Svelte", "D3", "Pandas"]
