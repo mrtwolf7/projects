@@ -1,142 +1,122 @@
-import requests
 import pandas as pd
+import requests
 from datetime import datetime, timedelta
 from pathlib import Path
 import time
 
 CITIES_FILE = Path("cities.csv")
 OUTPUT_FILE = Path("data/sun_data.csv")
-
 YEAR = 2026
-API_URL = "https://api.sunrise-sunset.org/json"
 
 
-# -------------------------
-# Helpers
-# -------------------------
-def seconds_to_hours(seconds):
-    return seconds / 3600
+def utc_to_local(utc_time_str, lon):
+    offset_hours = lon / 15
+
+    t = datetime.strptime(utc_time_str, "%H:%M:%S")
+    total_seconds = t.hour * 3600 + t.minute * 60 + t.second
+    total_seconds += offset_hours * 3600
+    total_seconds = total_seconds % (24 * 3600)
+
+    h = int(total_seconds // 3600)
+    m = int((total_seconds % 3600) // 60)
+    s = int(total_seconds % 60)
+
+    return h, m, s
 
 
-def time_str_to_hours(t):
-    h, m, s = map(int, t.split(":"))
+def hms_to_decimal(h, m, s):
     return h + m/60 + s/3600
 
 
-def extract_time_from_iso(iso_string):
-    return datetime.fromisoformat(iso_string).strftime("%H:%M:%S")
+def get_sun_data(lat, lon, year=YEAR):
+    url = "https://api.sunrise-sunset.org/json"
 
-
-def get_sun_data(lat, lon, date):
-    params = {
-        "lat": lat,
-        "lng": lon,
-        "date": date.strftime("%Y-%m-%d"),
-        "formatted": 0
-    }
-
-    response = requests.get(API_URL, params=params)
-    data = response.json()["results"]
-
-    sunrise = extract_time_from_iso(data["sunrise"])
-    sunset = extract_time_from_iso(data["sunset"])
-    day_length_seconds = int(data["day_length"])
-
-    return sunrise, sunset, day_length_seconds
-
-
-# -------------------------
-# Main
-# -------------------------
-def main():
-    cities = pd.read_csv(CITIES_FILE)
-
-    start_date = datetime(YEAR, 1, 1)
-    end_date = datetime(YEAR, 12, 31)
-    all_dates = pd.date_range(start_date, end_date)
-
-    # Load existing data if exists
-    if OUTPUT_FILE.exists():
-        existing_df = pd.read_csv(OUTPUT_FILE, parse_dates=["date"])
-    else:
-        existing_df = pd.DataFrame()
+    start_date = datetime(year, 1, 1)
+    end_date = datetime(year, 12, 31)
 
     rows = []
 
-    for _, city_row in cities.iterrows():
-        city = city_row["city"]
-        country = city_row["country"]
-        lat = city_row["lat"]
-        lon = city_row["lon"]
+    date = start_date
+    while date <= end_date:
+        params = {
+            "lat": lat,
+            "lng": lon,
+            "date": date.strftime("%Y-%m-%d"),
+            "formatted": 0
+        }
 
-        print(f"\nProcessing {city}...")
+        r = requests.get(url, params=params)
+        data = r.json()["results"]
 
-        # Find already downloaded dates for this city
-        if not existing_df.empty and city in existing_df["city"].unique():
-            existing_dates = existing_df[existing_df["city"] == city]["date"]
-            missing_dates = all_dates.difference(existing_dates)
-        else:
-            missing_dates = all_dates
+        sunrise_utc = data["sunrise"][11:19]
+        sunset_utc = data["sunset"][11:19]
 
-        print(f"Missing days to download: {len(missing_dates)}")
+        sr_h, sr_m, sr_s = utc_to_local(sunrise_utc, lon)
+        ss_h, ss_m, ss_s = utc_to_local(sunset_utc, lon)
 
-        for date in missing_dates:
-            try:
-                sunrise, sunset, day_length_sec = get_sun_data(lat, lon, date)
+        sunrise_hours = hms_to_decimal(sr_h, sr_m, sr_s)
+        sunset_hours = hms_to_decimal(ss_h, ss_m, ss_s)
 
-                rows.append({
-                    "date": date,
-                    "city": city,
-                    "country": country,
-                    "lat": lat,
-                    "lon": lon,
-                    "sunrise": sunrise,
-                    "sunset": sunset,
-                    "day_length_sec": day_length_sec
-                })
+        daylight_hours = sunset_hours - sunrise_hours
+        if daylight_hours < 0:
+            daylight_hours += 24
 
-                time.sleep(0.15)
+        rows.append([
+            date.strftime("%Y-%m-%d"),
+            sunrise_hours,
+            sunset_hours,
+            daylight_hours
+        ])
 
-            except Exception as e:
-                print(f"Error for {city} on {date}: {e}")
+        date += timedelta(days=1)
+        time.sleep(0.2)
 
-    # If no new data, exit
-    if not rows:
-        print("\nNo new data to download.")
-        return
+    df = pd.DataFrame(rows, columns=[
+        "date",
+        "sunrise_hours",
+        "sunset_hours",
+        "daylight_hours"
+    ])
 
-    new_df = pd.DataFrame(rows)
+    return df
 
-    # -------------------------
-    # Feature Engineering
-    # -------------------------
-    new_df["date"] = pd.to_datetime(new_df["date"])
-    new_df["day_of_year"] = new_df["date"].dt.dayofyear
 
-    new_df["sunrise_hours"] = new_df["sunrise"].apply(time_str_to_hours)
-    new_df["sunset_hours"] = new_df["sunset"].apply(time_str_to_hours)
-    new_df["daylight_hours"] = new_df["day_length_sec"].apply(seconds_to_hours)
+def main():
+    cities = pd.read_csv(CITIES_FILE)
 
-    new_df = new_df.sort_values(["city", "date"])
-    new_df["daylight_change"] = new_df.groupby("city")["daylight_hours"].diff()
-    new_df["solar_midpoint"] = (new_df["sunrise_hours"] + new_df["sunset_hours"]) / 2
-
-    new_df["daylight_category"] = pd.cut(
-        new_df["daylight_hours"],
-        bins=[0, 8, 10, 12, 14, 16, 24],
-        labels=["Very Short", "Short", "Medium", "Long", "Very Long", "Extreme"]
-    )
-
-    # Merge with existing data
-    if not existing_df.empty:
-        final_df = pd.concat([existing_df, new_df], ignore_index=True)
+    if OUTPUT_FILE.exists():
+        existing = pd.read_csv(OUTPUT_FILE)
     else:
-        final_df = new_df
+        existing = pd.DataFrame()
 
-    final_df.to_csv(OUTPUT_FILE, index=False)
+    all_data = []
 
-    print(f"\nAdded {len(new_df)} new rows.")
-    print(f"Saved to {OUTPUT_FILE}")
+    for _, row in cities.iterrows():
+        city = row["city"]
+
+        if not existing.empty and city in existing["city"].unique():
+            print(f"Skipping {city} (already downloaded)")
+            continue
+
+        print(f"Downloading data for {city}...")
+
+        df = get_sun_data(row["lat"], row["lon"])
+        df["city"] = city
+
+        all_data.append(df)
+
+    if all_data:
+        new_data = pd.concat(all_data)
+
+        if not existing.empty:
+            combined = pd.concat([existing, new_data])
+        else:
+            combined = new_data
+
+        combined.to_csv(OUTPUT_FILE, index=False)
+        print("Saved to data/sun_data.csv")
+    else:
+        print("No new cities to download.")
 
 
 if __name__ == "__main__":
