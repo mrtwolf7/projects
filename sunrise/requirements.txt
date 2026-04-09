@@ -3,4 +3,3 @@ gunicorn
 pandas
 plotly
 requests
-time
