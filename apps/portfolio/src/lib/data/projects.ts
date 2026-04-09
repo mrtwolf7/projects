@@ -24,7 +24,7 @@ export const projects = [
     slug: "weather-analysis",
     description:
       "Comparing cities sunrises and sunsets",
-    demoUrl: "#",
+    demoUrl: "https://daylights-of38.onrender.com",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/sunrise",
     type: "Dash",
     stack: ["Dash", "Pandas"]
