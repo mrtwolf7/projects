@@ -5,6 +5,7 @@ import pandas as pd
 from utils import load_data, filter_city, aggregate_data, add_time_strings
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Load all data once
 df_all = load_data()
