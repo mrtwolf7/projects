@@ -20,6 +20,16 @@ export const projects = [
     stack: ["Dash", "Pandas"]
   },
   {
+    title: "Cities daylights",
+    slug: "weather-analysis",
+    description:
+      "Comparing cities sunrises and sunsets",
+    demoUrl: "#",
+    repoUrl: "https://github.com/mrtwolf7/projects/tree/main/sunrise",
+    type: "Dash",
+    stack: ["Dash", "Pandas"]
+  },
+  {
     title: "Tennis predictability",
     slug: "weather-analysis",
     description:
