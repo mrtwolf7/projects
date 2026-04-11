@@ -194,7 +194,7 @@
 </style>
 
 <div class="container">
-  <div class="title">Total 2nd Serve Points Won (Cumulative)</div>
+  <div class="title">Total 2nd Serve Matches Won (Cumulative)</div>
   
   <svg width={WIDTH} height={HEIGHT}>
     <g transform="translate({MARGIN.left}, {MARGIN.top})">
