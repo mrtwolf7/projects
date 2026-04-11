@@ -32,8 +32,17 @@
     only in won matches.
   </p>
   <PercOverallWon />
-
+  <p>
+    However, I thought that this definition was still not fully representative of 2nd serve being so important to 
+    the victory. <br>
+    I then analysed what are the players that won the most matches by having a 2nd serve better than their opponent, while the 
+    1st serve was worse - this means the 2ns serve was decisive for them to win the match:
+  </p>
   <SecMatchesWTime />
+  <p>
+    Well, based on this definition Federer is the one that won more matches thanks to his 2nd serve: being a huge fan of his, I guess
+    I can accept this result very gladly!
+  </p>  
 
 </article>
 

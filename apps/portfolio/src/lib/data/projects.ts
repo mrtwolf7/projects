@@ -38,5 +38,15 @@ export const projects = [
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/tennis",
     type: "svelte",
     stack: ["Svelte", "D3", "Pandas"]
-  }  
+  },
+  {
+    title: "Serve like McEnroe",
+    slug: "mcenroe",
+    description:
+      "McEnroe was know to have a lethal 2nd serve. Who's his heir?",
+    demoUrl: "#",
+    repoUrl: "https://github.com/mrtwolf7/projects/tree/main/tennis/mcenroe",
+    type: "svelte",
+    stack: ["Svelte", "D3", "Pandas"]
+  }
 ];
