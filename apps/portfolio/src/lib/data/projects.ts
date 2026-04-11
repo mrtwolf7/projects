@@ -44,7 +44,7 @@ export const projects = [
     slug: "mcenroe",
     description:
       "McEnroe was know to have a lethal 2nd serve. Who's his heir?",
-    demoUrl: "#",
+    demoUrl: "https://mcenroe.vercel.app/",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/tennis/mcenroe",
     type: "svelte",
     stack: ["Svelte", "D3", "Pandas"]
