@@ -1,6 +1,9 @@
 import requests
 import pandas as pd
 from datetime import datetime
+import os
+
+os.makedirs("snapshots", exist_ok=True)
 
 URL = "https://weather-broker-cdn.api.bbci.co.uk/en/forecast/aggregated/2643743"
 
