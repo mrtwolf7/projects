@@ -37,4 +37,4 @@ def fetch_snapshot():
 df = fetch_snapshot()
 df["horizon_hours"] = (df["forecast_time"] - df["scrape_time"]).dt.total_seconds() / 3600
 timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-df.to_parquet(f"snapshots/{timestamp}.parquet")
+df.to_parquet(f"london_bbc_weather/snapshots/{timestamp}.parquet")
