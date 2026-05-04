@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Rightmove Overlay",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.rightmove.co.uk/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.rightmove.co.uk/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
