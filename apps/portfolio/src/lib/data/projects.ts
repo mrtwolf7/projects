@@ -48,5 +48,15 @@ export const projects = [
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/tennis/mcenroe",
     type: "svelte",
     stack: ["Svelte", "D3", "Pandas"]
+  },
+    {
+    title: "Movie success prediction",
+    slug: "moviepredictor",
+    description:
+      "Is it possible to accurately predict if a movie will be a success? (box office vs budget)",
+    scriptUrl: "https://github.com/mrtwolf7/projects/blob/main/movies_budgets/movies_analysis.ipynb",
+    repoUrl: "https://github.com/mrtwolf7/projects/tree/main/movies_budgets",
+    type: "Jupyter",
+    stack: ["Jupyter Notebook", "Pandas", "sci-kit"]
   }
 ];
