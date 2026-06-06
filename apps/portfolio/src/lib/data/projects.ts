@@ -49,14 +49,23 @@ export const projects = [
     type: "svelte",
     stack: ["Svelte", "D3", "Pandas"]
   },
-    {
+  {
     title: "Movie success prediction",
     slug: "moviepredictor",
     description:
-      "Is it possible to accurately predict if a movie will be a success? (box office vs budget)",
+      "Is it possible to accurately predict if a movie will be a success? (box office vs budget ML predictor)",
     scriptUrl: "https://github.com/mrtwolf7/projects/blob/main/movies_budgets/movies_analysis.ipynb",
     repoUrl: "https://github.com/mrtwolf7/projects/tree/main/movies_budgets",
     type: "Jupyter",
-    stack: ["Jupyter Notebook", "Pandas", "sci-kit"]
+    stack: ["Jupyter Notebook", "Pandas", "sci-kit", "ML"]
+  },
+  {
+    title: "Music tracks instruments identifier",
+    slug: "moviepredictor",
+    description:
+      "Streamlit interface that uses a CNN to identify the intruments played in a music track ",
+    repoUrl: "https://github.com/mrtwolf7/projects/tree/main/music_track",
+    type: "Jupyter",
+    stack: ["Streamlit", "CNN", "keras"]
   }
 ];
