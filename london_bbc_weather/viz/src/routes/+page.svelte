@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import { csvParse } from 'd3-dsv';
 
+    import ObservedRainFrequencyHeatmap from '$lib/ObservedRainFrequencyHeatmap.svelte';
     import RainProbabilityConditions from '$lib/RainProbabilityConditions.svelte';
     import RainProbabilityDist from '$lib/RainProbabilityDist.svelte';
     import TemperatureScatter from '$lib/TemperatureScatter.svelte';
@@ -103,8 +104,57 @@
     </p>
 
     <RainProbabilityDist data={weatherData} />
+
+    <p> 
+        Looking at this, I could finally understand where my confusion was coming from. You can see that, with the exception of "Heavy Rain",
+        all the other rain related conditions are widely used, even when the rain probability is way below 50%! Personally, knowing that "Thundery Showers" and "Light
+        Rain Showers" are used even when the rain probability is around 30% really causes a headache. And being a user, the first thing you see is the weather icon - it strongly influences your
+        plans; note also that the rain probability is always reprensented by the same rain icon, regardless of the value.
+    </p>
+    <p>
+        Ok, but after all, how many times did it really rain? Did the predictions got more accurate getting closer to the predicted event?
+    </p>
+
+    <ObservedRainFrequencyHeatmap data={weatherData} />
+    <p>
+        What the heatmap is showing is the difference between how many times did it actually rain compared to the predicted rain interval, grouped by time.
+        So, for instance, if between 5 to 6 hours before the predicted event BBC predicted 30-40% of rain probability and it rained 50% of the times, the heatmap would show +10%.
+        This means that any time it rained within the predicted interval, the heatmap just shows a 0% - coloured with a neutral white, it is more blue if it rained more than predicted, more red if it rained less.
+    </p>
+    <p>
+        Looking at the heatmap there are some interesting bits to notice:
+    </p> 
+    <ul>
+        <li> between 10 to 4 days before the event, BBC tended to overestimate the rain probability, quite significantly for high values. It rained between 20% to 40% less; </li>
+        <li> interestingly most of the correct prediction happened between 3 days to 12 hours before the event, while many predictions got increasingly wrong as approaching to the event; </li>
+        <li> the most correct predictions sit in the extreme values, both high and low, while the rain probabilities between 30% to 70% are the ones with the highest differences between the actual times it really rained. </li>
+    </ul>
+    <p>
+        So, as a user, when is the best time to get the most accurate rain prediction? <strong> BBC predicted the probability that there would be rain the most accurate between 9 to 12 hours before the event </strong>, while it got incredibly worse approaching to the event, especially 3-4 hours before. 
+        Other decent predictions could also be found between 1-2 days before the event.
+    </p>
+    <p>
+        Overall it rained way less than predicted and a similar outcome can be found by looking at the temperatures. I also found this to be very off at times and so I tried to understand
+        how the forecatst varied approaching to the event, more spefically the difference between Predicted and Actual temperature over time:
+    </p>
     <TemperatureScatter data={weatherData} />
+
+    <p>
+        It does not come as a surprise that predictions are more accurate as approaching to the event, however up to one week before, 
+        <strong> predictions can be off by 10° (underestimating the heat) and 6° (overestimating it) </strong>. In general there are 
+        more predictions underestimating the temperature than overestimating it. <br>
+        But I wanted to understand if there was any factor making the predictions more or less wrong, and by how much?
+        Looking at how wrong the predictions were depending on the actual temperature, there is quite a big difference, especially up to one week before:
+    </p>
     <TemperatureMAE data={weatherData} />
+    <p>
+        The blue line repreents the absolute difference across all the temperatures, while the greyed out lines are different for each temperature: 
+        from that it can be noticed that the higher the temperature the least accurate the prediction was - up to one week - then, as expected they all converge 
+        as the event approaches.
+    </p>
+    <p>
+        One question then has to be asked: <strong> Can we predict whether a BBC forecast will be correct? <strong>
+    </p>
 
 {/if}
 
